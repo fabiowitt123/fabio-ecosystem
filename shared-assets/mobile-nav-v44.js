@@ -89,6 +89,9 @@
     if(window.innerWidth>980) closeAll();
   },{passive:true});
 
+  window.addEventListener('pageshow',()=>closeAll());
+  document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='hidden') closeAll(); });
+
   document.addEventListener('DOMContentLoaded',()=>{
     ensureBackdrop();
     document.querySelectorAll(BUTTON_SELECTOR).forEach(btn=>{

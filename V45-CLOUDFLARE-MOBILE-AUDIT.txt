@@ -1,0 +1,19 @@
+V45 CLOUDFLARE + MOBILE AUDIT
+=============================
+HTML-Dateien: 60
+Geänderte HTML-Dateien: 59
+Kanonisierte interne Links: 1393
+Fehlende interne Linkziele: 0
+
+Cloudflare-Konfiguration:
+- assets.directory = .
+- html_handling = auto-trailing-slash
+- not_found_handling = 404-page
+
+Mobile:
+- gemeinsamer Navigation Controller
+- Safe-Area-Unterstützung
+- 48px Touch Targets
+- Menü max. 78dvh + Scroll
+- Reduced-Motion Support
+

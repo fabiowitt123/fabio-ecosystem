@@ -50,3 +50,12 @@ Der Navbar ist responsive und auf Desktop/Mobile identisch.
 - Fixed legacy double-click-handler conflict that could open and immediately close the menu.
 - Added overlay, body scroll lock, Escape-to-close, close-on-link, resize reset and improved ARIA states.
 - Added mobile hardening for touch targets, forms, dialogs, tables, media and narrow screens.
+
+
+## v45 – Cloudflare & Mobile Edition
+
+- interne HTML-Links auf Cloudflare-kanonische URLs umgestellt (`/sprachlernapp/` statt `/sprachlernapp/index.html`)
+- `wrangler.jsonc` für Static Assets, automatische Trailing-Slash-Logik und echte 404-Seite ergänzt
+- gemeinsame Mobile Navigation weiter gehärtet
+- iPhone Safe Areas, 48px Touch Targets, mobile Typografie und Reduced Motion verbessert
+- temporäre Testdateien entfernt
