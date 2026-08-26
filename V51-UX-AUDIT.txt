@@ -1,0 +1,11 @@
+Fabio Witt Web Ecosystem v51
+
+Schwerpunkte:
+- Robust v50 navbar retained across all HTML pages
+- Global responsive polish and accessibility focus states
+- Fabio personal page: quick project-fit strip
+- DACHWERK: productized service packages
+- SPRACHWERK: course-format decision aid
+- LERNWERK: dynamic continue-learning dashboard using localStorage
+- DACHWERK Blog: guided reading paths
+- Mobile responsive refinements across ecosystem

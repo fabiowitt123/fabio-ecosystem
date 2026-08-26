@@ -1,0 +1,9 @@
+FABIO ECOSYSTEM v50 NAV/UX AUDIT
+
+HTML files processed: 61
+Navigation: self-contained, inline CSS, native details/summary mobile menu (no JS dependency).
+External navbar asset dependency removed.
+Brand mark is inline (no broken logo path possible).
+Context CTA: Fabio=Projektanfrage, DACHWERK=SAP-Anfrage, SPRACHWERK=Kursanfrage, LERNWERK=Kurs kaufen.
+FormSubmit email normalized to fabiowitt@gmx.ch.
+DACHWERK 30-minute wording normalized to customer/project inquiry wording.

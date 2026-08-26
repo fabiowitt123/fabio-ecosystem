@@ -10,9 +10,36 @@
 <link href="assets/lernwerk-logo.svg" rel="icon"/>
 <link href="manifest.webmanifest" rel="manifest"/>
 <meta content="#0b3159" name="theme-color"/>
-<link href="/shared-assets/global-nav-v47.css" rel="stylesheet"></head>
-<body class="v41-home">
-<div data-eco47-nav-slot></div>
+<style id="fw50-nav-css">
+:root{--fw50-navy:#0f2f52;--fw50-teal:#2aa58f;--fw50-text:#17324d;--fw50-line:#dbe5ec;--fw50-bg:#fff}
+html{scroll-padding-top:86px}
+.fw50-nav{position:sticky;top:0;z-index:2147483000;background:rgba(255,255,255,.985);border-bottom:1px solid rgba(15,47,82,.10);box-shadow:0 8px 28px rgba(15,47,82,.07);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.fw50-nav *{box-sizing:border-box}
+.fw50-nav__inner{width:min(1240px,calc(100% - 32px));min-height:76px;margin:auto;display:flex;align-items:center;gap:22px}
+.fw50-brand{display:inline-flex;align-items:center;gap:10px;color:var(--fw50-navy)!important;text-decoration:none!important;flex:0 0 auto;min-width:176px}
+.fw50-brand__mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,var(--fw50-navy),#1f527c);display:grid;place-items:center;color:white;font-weight:950;font-size:13px;letter-spacing:-.04em;box-shadow:0 7px 18px rgba(15,47,82,.18)}
+.fw50-brand__name{display:flex;flex-direction:column;line-height:1}.fw50-brand__name b{font-size:16px;letter-spacing:.01em}.fw50-brand__name small{font-size:9px;color:#6f8495;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-top:4px}
+.fw50-menu{margin-left:auto;display:flex;align-items:center;gap:4px}
+.fw50-menu a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 10px;border-radius:10px;color:var(--fw50-text)!important;text-decoration:none!important;font-size:13px;font-weight:800;white-space:nowrap;transition:.16s ease}
+.fw50-menu a:hover,.fw50-menu a[aria-current="page"]{background:#eef5f7;color:var(--fw50-navy)!important}
+.fw50-menu .fw50-cta{margin-left:5px;padding-inline:15px;background:var(--fw50-navy)!important;color:white!important;box-shadow:0 8px 20px rgba(15,47,82,.16)}
+.fw50-menu .fw50-cta:hover{background:#17456f!important;transform:translateY(-1px)}
+.fw50-mobile{display:none;margin-left:auto;position:relative}
+.fw50-mobile>summary{list-style:none;width:48px;height:48px;border:1px solid var(--fw50-line);border-radius:13px;background:#fff;display:grid;place-items:center;cursor:pointer;box-shadow:0 4px 14px rgba(15,47,82,.07);-webkit-tap-highlight-color:transparent}
+.fw50-mobile>summary::-webkit-details-marker{display:none}.fw50-hamb{width:22px;height:16px;position:relative;display:block}.fw50-hamb i{position:absolute;left:0;width:22px;height:2px;background:var(--fw50-navy);border-radius:2px;transition:.2s}.fw50-hamb i:nth-child(1){top:0}.fw50-hamb i:nth-child(2){top:7px}.fw50-hamb i:nth-child(3){top:14px}
+.fw50-mobile[open] .fw50-hamb i:nth-child(1){transform:translateY(7px) rotate(45deg)}.fw50-mobile[open] .fw50-hamb i:nth-child(2){opacity:0}.fw50-mobile[open] .fw50-hamb i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.fw50-mobile__panel{position:absolute;right:0;top:58px;width:min(360px,calc(100vw - 24px));padding:10px;border:1px solid var(--fw50-line);border-radius:18px;background:#fff;box-shadow:0 24px 70px rgba(7,24,42,.26);display:grid;gap:5px}
+.fw50-mobile__panel a{display:flex;min-height:50px;align-items:center;padding:12px 14px;border-radius:12px;color:var(--fw50-text)!important;text-decoration:none!important;font-weight:850;font-size:15px}.fw50-mobile__panel a:hover,.fw50-mobile__panel a[aria-current="page"]{background:#eef5f7}.fw50-mobile__panel .fw50-cta{justify-content:center;background:var(--fw50-navy)!important;color:#fff!important;margin-top:4px}
+.fw50-mobile__meta{padding:9px 13px 5px;color:#7a8d9d;font-size:11px;font-weight:700;border-top:1px solid #edf2f5;margin-top:4px}
+@media(max-width:1080px){.fw50-nav__inner{min-height:68px;width:calc(100% - 24px)}.fw50-menu{display:none}.fw50-mobile{display:block}.fw50-brand{min-width:0}.fw50-brand__name small{display:none}}
+@media(max-width:520px){html{scroll-padding-top:72px}.fw50-nav__inner{min-height:64px;width:calc(100% - 20px);gap:12px}.fw50-brand__mark{width:36px;height:36px;border-radius:11px}.fw50-brand__name b{font-size:15px}.fw50-mobile>summary{width:46px;height:46px}.fw50-mobile__panel{position:fixed;left:10px;right:10px;top:72px;width:auto;max-height:calc(100dvh - 84px);overflow:auto}.fw50-nav{padding-top:env(safe-area-inset-top,0px)}}
+@media(prefers-reduced-motion:reduce){.fw50-nav *{transition:none!important}}
+</style><link href="../shared-assets/v51-polish.css" rel="stylesheet"/></head>
+<body class="v41-home"><header class="fw50-nav" data-fw50-nav=""><div class="fw50-nav__inner">
+<a aria-label="Fabio Witt Startseite" class="fw50-brand" href="../"><span aria-hidden="true" class="fw50-brand__mark">FW</span><span class="fw50-brand__name"><b>Fabio Witt</b><small>Digital Ecosystem</small></span></a>
+<nav aria-label="Hauptnavigation" class="fw50-menu"><a href="../dachwerk/">DACHWERK</a><a href="../sprachschule/">SPRACHWERK</a><a aria-current="page" href="../sprachlernapp/">LERNWERK</a><a href="../">Fabio Witt</a><a href="../downloads/Fabio-Witt-CV.pdf">CV</a><a href="../dachwerk/blog">Blog</a><a class="fw50-cta" href="../sprachlernapp/#kurs-kaufen">Kurs kaufen</a></nav>
+<details class="fw50-mobile"><summary aria-label="Navigation öffnen oder schließen"><span aria-hidden="true" class="fw50-hamb"><i></i><i></i><i></i></span></summary><nav aria-label="Mobile Navigation" class="fw50-mobile__panel"><a href="../dachwerk/">DACHWERK</a><a href="../sprachschule/">SPRACHWERK</a><a aria-current="page" href="../sprachlernapp/">LERNWERK</a><a href="../">Fabio Witt</a><a href="../downloads/Fabio-Witt-CV.pdf">CV</a><a href="../dachwerk/blog">Blog</a><a class="fw50-cta" href="../sprachlernapp/#kurs-kaufen">Kurs kaufen</a><div class="fw50-mobile__meta">Fabio Witt · DACHWERK · SPRACHWERK · LERNWERK</div></nav></details>
+</div></header>
 <main>
 <section class="v41-hero">
 <div aria-hidden="true" class="v41-alps"><i></i><b></b><span></span></div>
@@ -37,7 +64,7 @@
 <p id="dash-next-copy">Nächster Schritt: Englisch weiterlernen.</p>
 </aside>
 </div>
-</section>
+</section><section class="v51-section v51-continue" data-v51-continue=""><div class="v51-shell"><span class="v51-kicker" style="color:#83efd7">Dein Lern-Dashboard</span><h2 class="v51-title">Weiterlernen, ohne wieder zu suchen.</h2><p class="v51-lead">LERNWERK merkt sich deine letzte Sprache und deinen Kursfortschritt. Von hier aus springst du direkt in die nächste Lektion oder in dein Training.</p><div class="v51-progress-card"><div class="v51-progress-main"><div class="v51-progress-row"><div><small>Aktiver Kurs</small><strong data-v51-lang="">Englisch</strong></div><div style="text-align:right"><small>Nächster Schritt</small><strong data-v51-next="">Lektion 1</strong></div></div><div class="v51-progress-track"><i data-v51-bar=""></i></div><div class="v51-progress-row"><span>Foundation-Fortschritt</span><b data-v51-pct="">0 %</b></div><div class="v51-actions"><a class="v51-btn primary" data-v51-resume="" href="course.html?lang=en">Kurs fortsetzen</a><a class="v51-btn secondary" data-v51-practice="" href="language-en.html?tab=training">10-Minuten-Training</a></div></div><aside class="v51-progress-side"><div class="v51-stat-grid"><div><b data-v51-xp="">0</b><span>Gesamt-XP</span></div><div><b data-v51-streak="">0</b><span>Streak</span></div><div><b data-v51-lessons="">0/10</b><span>Lektionen</span></div></div><p style="margin:18px 0 0;opacity:.78;line-height:1.55">Tipp: Bestehe jede Guided Lesson mit mindestens 75 %, um die nächste Lektion freizuschalten.</p></aside></div></div></section>
 <section class="v41-snapshot">
 <div class="v41-shell"><div><strong>20</strong><span>Grammatiklektionen je Sprache</span></div><div><strong>20 × 50</strong><span>Vokabelkarten je Sprache</span></div><div><strong>100</strong><span>Verbtabellen je Sprache</span></div><div><strong>7</strong><span>separate Sprachkurse</span></div></div>
 </section>
@@ -129,7 +156,7 @@
 <section class="v41-section v41-buy" id="kurs-kaufen">
 <div class="v41-shell"><div class="v41-buy-grid">
 <div class="v41-buy-copy"><span class="v41-kicker">PRIVATUNTERRICHT &amp; VIDEOKURS</span><h2>Du möchtest mehr als Selbstlernen?</h2><p>Wähle Sprache, Niveau und Lernziel. Die Anfrage bleibt direkt bei LERNWERK und führt nicht zu DACHWERK.</p><div class="v41-buy-points"><span>✓ persönlicher Lernplan</span><span>✓ 1:1-Unterricht möglich</span><span>✓ Videokurs + App kombinierbar</span><span>✓ Business &amp; Prüfungsvorbereitung</span></div><a class="v41-btn light" href="/sprachlernapp/pricing">Pakete &amp; Preise ansehen</a></div>
-<form action="https://formsubmit.co/fabiowitt@gmx.de" class="v41-buy-form" method="POST"><input name="_subject" type="hidden" value="Neue LERNWERK Kurskauf-Anfrage"/><input name="_captcha" type="hidden" value="false"/><label>Name<input name="name" required=""/></label><label>E-Mail<input name="email" required="" type="email"/></label><div class="v41-form-row"><label>Sprache<select name="sprache"><option>Deutsch</option><option>Englisch</option><option>Französisch</option><option>Spanisch</option><option>Italienisch</option><option>Russisch</option><option>Portugiesisch</option></select></label><label>Niveau<select name="niveau"><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>Unsicher</option></select></label></div><label>Interesse<select name="paket"><option>Videokurs</option><option>LERNWERK Pro</option><option>Privatunterricht</option><option>Privatunterricht + LERNWERK Pro</option></select></label><label>Dein Ziel<textarea name="nachricht" placeholder="Was möchtest du erreichen?" rows="4"></textarea></label><button class="v41-btn primary" type="submit">Kursanfrage senden</button></form>
+<form action="https://formsubmit.co/fabiowitt@gmx.ch" class="v41-buy-form" method="POST"><input name="_subject" type="hidden" value="Neue LERNWERK Kurskauf-Anfrage"/><input name="_captcha" type="hidden" value="false"/><label>Name<input name="name" required=""/></label><label>E-Mail<input name="email" required="" type="email"/></label><div class="v41-form-row"><label>Sprache<select name="sprache"><option>Deutsch</option><option>Englisch</option><option>Französisch</option><option>Spanisch</option><option>Italienisch</option><option>Russisch</option><option>Portugiesisch</option></select></label><label>Niveau<select name="niveau"><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>Unsicher</option></select></label></div><label>Interesse<select name="paket"><option>Videokurs</option><option>LERNWERK Pro</option><option>Privatunterricht</option><option>Privatunterricht + LERNWERK Pro</option></select></label><label>Dein Ziel<textarea name="nachricht" placeholder="Was möchtest du erreichen?" rows="4"></textarea></label><button class="v41-btn primary" type="submit">Kursanfrage senden</button></form>
 </div></div>
 </section>
 <section class="v41-support"><div class="v41-shell"><div><strong>LERNWERK unterstützen</strong><span>Frei verfügbare Inhalte können freiwillig über PayPal unterstützt werden.</span></div><a data-paypal-donate="" href="#">Mit PayPal spenden</a></div></section>
@@ -142,4 +169,4 @@
 <script src="app.js"></script>
 <script src="../shared-assets/site-config.js"></script>
 <script src="home-v41.js"></script>
-<script defer src="/shared-assets/global-nav-v47.js"></script></body></html>
+<script defer="True" src="v51-home.js"></script></body></html>

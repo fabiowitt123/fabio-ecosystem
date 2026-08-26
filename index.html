@@ -106,8 +106,35 @@
 .fabio-project-form form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fabio-project-form label{display:grid;gap:6px;color:#526b80;font-size:11px;font-weight:800}.fabio-project-form label:last-of-type{grid-column:1/-1}.fabio-project-form input,.fabio-project-form textarea{padding:11px;border:1px solid #bdced8;border-radius:9px;font:inherit}.fabio-project-form button{grid-column:1/-1;padding:12px;border:0;border-radius:9px;background:#14375f;color:#fff;font-weight:900;cursor:pointer}
 @media(max-width:800px){.fabio-form-grid{grid-template-columns:1fr}.fabio-project-form form{grid-template-columns:1fr}.fabio-project-form label:last-of-type,.fabio-project-form button{grid-column:auto}}
 </style><style>.webseiten-showcase{padding:60px 16px;background:#f4f8fb}.webseiten-showcase-inner{width:min(1180px,100%);margin:auto}.webseiten-showcase span{font-size:10px;font-weight:900;letter-spacing:.12em;color:#2a9d8f}.webseiten-showcase h2{font-size:34px;color:#14375f;margin:7px 0}.webseiten-showcase p{color:#647a8e;max-width:760px}.webseiten-showcase img{display:block;width:100%;margin-top:22px;border-radius:20px;box-shadow:0 20px 55px #14375f22}</style><style>/* v37 shared quality */html{scroll-behavior:smooth}body{overflow-x:hidden}img,svg,video{max-width:100%}input,select,textarea,button{box-sizing:border-box}@media(max-width:980px){.main-nav{max-height:calc(100vh - 70px);overflow:auto}}</style><style>/* v40 CV download */.cv-download{padding:54px 0;background:#f4f8fb}.cv-download-card{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:28px;border:1px solid #dce6ec;border-radius:20px;background:#fff;box-shadow:0 14px 40px rgba(20,55,95,.07)}.cv-download-card h2{margin:6px 0;color:#14375f}.cv-download-card p{margin:0;color:#647a8e;max-width:680px}.cv-download-actions{display:flex;gap:10px;flex-wrap:wrap;flex:0 0 auto}@media(max-width:760px){.cv-download-card{display:block}.cv-download-actions{margin-top:18px}}</style>
-<link href="/shared-assets/global-nav-v47.css" rel="stylesheet"></head><body>
-<div data-eco47-nav-slot></div>
+<style id="fw50-nav-css">
+:root{--fw50-navy:#0f2f52;--fw50-teal:#2aa58f;--fw50-text:#17324d;--fw50-line:#dbe5ec;--fw50-bg:#fff}
+html{scroll-padding-top:86px}
+.fw50-nav{position:sticky;top:0;z-index:2147483000;background:rgba(255,255,255,.985);border-bottom:1px solid rgba(15,47,82,.10);box-shadow:0 8px 28px rgba(15,47,82,.07);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.fw50-nav *{box-sizing:border-box}
+.fw50-nav__inner{width:min(1240px,calc(100% - 32px));min-height:76px;margin:auto;display:flex;align-items:center;gap:22px}
+.fw50-brand{display:inline-flex;align-items:center;gap:10px;color:var(--fw50-navy)!important;text-decoration:none!important;flex:0 0 auto;min-width:176px}
+.fw50-brand__mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,var(--fw50-navy),#1f527c);display:grid;place-items:center;color:white;font-weight:950;font-size:13px;letter-spacing:-.04em;box-shadow:0 7px 18px rgba(15,47,82,.18)}
+.fw50-brand__name{display:flex;flex-direction:column;line-height:1}.fw50-brand__name b{font-size:16px;letter-spacing:.01em}.fw50-brand__name small{font-size:9px;color:#6f8495;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-top:4px}
+.fw50-menu{margin-left:auto;display:flex;align-items:center;gap:4px}
+.fw50-menu a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 10px;border-radius:10px;color:var(--fw50-text)!important;text-decoration:none!important;font-size:13px;font-weight:800;white-space:nowrap;transition:.16s ease}
+.fw50-menu a:hover,.fw50-menu a[aria-current="page"]{background:#eef5f7;color:var(--fw50-navy)!important}
+.fw50-menu .fw50-cta{margin-left:5px;padding-inline:15px;background:var(--fw50-navy)!important;color:white!important;box-shadow:0 8px 20px rgba(15,47,82,.16)}
+.fw50-menu .fw50-cta:hover{background:#17456f!important;transform:translateY(-1px)}
+.fw50-mobile{display:none;margin-left:auto;position:relative}
+.fw50-mobile>summary{list-style:none;width:48px;height:48px;border:1px solid var(--fw50-line);border-radius:13px;background:#fff;display:grid;place-items:center;cursor:pointer;box-shadow:0 4px 14px rgba(15,47,82,.07);-webkit-tap-highlight-color:transparent}
+.fw50-mobile>summary::-webkit-details-marker{display:none}.fw50-hamb{width:22px;height:16px;position:relative;display:block}.fw50-hamb i{position:absolute;left:0;width:22px;height:2px;background:var(--fw50-navy);border-radius:2px;transition:.2s}.fw50-hamb i:nth-child(1){top:0}.fw50-hamb i:nth-child(2){top:7px}.fw50-hamb i:nth-child(3){top:14px}
+.fw50-mobile[open] .fw50-hamb i:nth-child(1){transform:translateY(7px) rotate(45deg)}.fw50-mobile[open] .fw50-hamb i:nth-child(2){opacity:0}.fw50-mobile[open] .fw50-hamb i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.fw50-mobile__panel{position:absolute;right:0;top:58px;width:min(360px,calc(100vw - 24px));padding:10px;border:1px solid var(--fw50-line);border-radius:18px;background:#fff;box-shadow:0 24px 70px rgba(7,24,42,.26);display:grid;gap:5px}
+.fw50-mobile__panel a{display:flex;min-height:50px;align-items:center;padding:12px 14px;border-radius:12px;color:var(--fw50-text)!important;text-decoration:none!important;font-weight:850;font-size:15px}.fw50-mobile__panel a:hover,.fw50-mobile__panel a[aria-current="page"]{background:#eef5f7}.fw50-mobile__panel .fw50-cta{justify-content:center;background:var(--fw50-navy)!important;color:#fff!important;margin-top:4px}
+.fw50-mobile__meta{padding:9px 13px 5px;color:#7a8d9d;font-size:11px;font-weight:700;border-top:1px solid #edf2f5;margin-top:4px}
+@media(max-width:1080px){.fw50-nav__inner{min-height:68px;width:calc(100% - 24px)}.fw50-menu{display:none}.fw50-mobile{display:block}.fw50-brand{min-width:0}.fw50-brand__name small{display:none}}
+@media(max-width:520px){html{scroll-padding-top:72px}.fw50-nav__inner{min-height:64px;width:calc(100% - 20px);gap:12px}.fw50-brand__mark{width:36px;height:36px;border-radius:11px}.fw50-brand__name b{font-size:15px}.fw50-mobile>summary{width:46px;height:46px}.fw50-mobile__panel{position:fixed;left:10px;right:10px;top:72px;width:auto;max-height:calc(100dvh - 84px);overflow:auto}.fw50-nav{padding-top:env(safe-area-inset-top,0px)}}
+@media(prefers-reduced-motion:reduce){.fw50-nav *{transition:none!important}}
+</style><link href="shared-assets/v51-polish.css" rel="stylesheet"/></head><body><header class="fw50-nav" data-fw50-nav=""><div class="fw50-nav__inner">
+<a aria-label="Fabio Witt Startseite" class="fw50-brand" href="./"><span aria-hidden="true" class="fw50-brand__mark">FW</span><span class="fw50-brand__name"><b>Fabio Witt</b><small>Digital Ecosystem</small></span></a>
+<nav aria-label="Hauptnavigation" class="fw50-menu"><a href="./dachwerk/">DACHWERK</a><a href="./sprachschule/">SPRACHWERK</a><a href="./sprachlernapp/">LERNWERK</a><a aria-current="page" href="./">Fabio Witt</a><a href="./downloads/Fabio-Witt-CV.pdf">CV</a><a href="./dachwerk/blog">Blog</a><a class="fw50-cta" href="./#fabio-anfrage">Projektanfrage</a></nav>
+<details class="fw50-mobile"><summary aria-label="Navigation öffnen oder schließen"><span aria-hidden="true" class="fw50-hamb"><i></i><i></i><i></i></span></summary><nav aria-label="Mobile Navigation" class="fw50-mobile__panel"><a href="./dachwerk/">DACHWERK</a><a href="./sprachschule/">SPRACHWERK</a><a href="./sprachlernapp/">LERNWERK</a><a aria-current="page" href="./">Fabio Witt</a><a href="./downloads/Fabio-Witt-CV.pdf">CV</a><a href="./dachwerk/blog">Blog</a><a class="fw50-cta" href="./#fabio-anfrage">Projektanfrage</a><div class="fw50-mobile__meta">Fabio Witt · DACHWERK · SPRACHWERK · LERNWERK</div></nav></details>
+</div></header>
 <main>
 <section class="hero"><div class="container hero-grid">
 <div>
@@ -124,7 +151,7 @@
 <div class="hero-actions"><a class="btn btn-primary" href="#kontakt">Projekt in 30 Minuten besprechen</a><a class="btn btn-secondary" href="#leistungen">Kompetenzen ansehen</a><a class="btn btn-secondary" href="https://www.linkedin.com/in/fabio-witt-8b889117a/" rel="noopener" target="_blank">LinkedIn-Profil ↗</a><a class="btn btn-secondary" href="downloads/Fabio-Witt-CV.pdf" rel="noopener" target="_blank">CV herunterladen ↓</a></div>
 <div class="availability-pill"><span class="availability-dot"></span><strong>Projektbasierte Mandate</strong><span>· DACH / Remote · nach Vereinbarung</span></div></div>
 <article class="hero-card"><img alt="Fabio Witt" src="assets/fabio-witt.jpg"/><div class="hero-card-body"><h3>Fabio Witt</h3><div class="role">Senior SAP S/4HANA Supply Chain Consultant</div><div class="badges"><span class="badge">SAP PP</span><span class="badge">SAP MM</span><span class="badge">Public Cloud</span><span class="badge">Signavio</span><span class="badge">Cloud ALM</span><span class="badge">SAP Activate</span></div></div></article>
-</div></section>
+</div></section><section class="v51-mini-strip" data-v51="fabio-fit"><div class="v51-shell"><div><span><b>SAP PP &amp; MM</b><small>Manufacturing · Procurement · Inventory</small></span></div><div><span><b>S/4HANA Transformation</b><small>Public Cloud · Fit-to-Standard · Testing</small></span></div><div><span><b>Transformation Toolchain</b><small>Signavio · Cloud ALM · LeanIX · BTP</small></span></div><div><span><b>Projektmodell</b><small>Remote-first · DACH &amp; international</small></span></div></div></section>
 <div class="trust"><div class="container trustbox">
 <div class="metric"><strong>M.Sc.</strong><span>Wirtschaftsinformatik</span></div>
 <div class="metric"><strong>PP + MM</strong><span>Manufacturing &amp; Procurement</span></div>
@@ -544,7 +571,7 @@
 <span style="font-size:10px;font-weight:900;letter-spacing:.1em;color:#2a9d8f">FABIO WITT · PROJEKTANFRAGE</span>
 <h2 style="color:#14375f">SAP-Unterstützung anfragen</h2>
 <p style="color:#647a8e">Beschreiben Sie kurz Projekt, SAP-Bereich und gewünschten Zeitraum.</p>
-<form action="https://formsubmit.co/fabiowitt@gmx.de" method="POST">
+<form action="https://formsubmit.co/fabiowitt@gmx.ch" method="POST">
 <input name="_subject" type="hidden" value="Neue Fabio Witt SAP-Projektanfrage"/>
 <input name="_captcha" type="hidden" value="false"/>
 <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px">
@@ -603,4 +630,4 @@ document.addEventListener("DOMContentLoaded",()=>{
   });
 });
 </script>
-<script defer src="/shared-assets/global-nav-v47.js"></script></body></html>
+</body></html>
