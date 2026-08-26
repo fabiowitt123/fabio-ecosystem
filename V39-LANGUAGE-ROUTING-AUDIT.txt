@@ -1,0 +1,8 @@
+language-de.html: OK
+language-en.html: OK
+language-fr.html: OK
+language-es.html: OK
+language-it.html: OK
+language-ru.html: OK
+language-pt.html: OK
+Main language cards: 7

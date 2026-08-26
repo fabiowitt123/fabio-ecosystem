@@ -1,0 +1,8 @@
+/sap-blog        /dachwerk/blog.html           200
+/dachwerk         /dachwerk/index.html          200
+/sprachschule     /sprachschule/index.html       200
+/sprachblog       /sprachschule/blog.html        200
+
+/blog            /dachwerk/blog.html           200
+
+/sprachlernapp    /sprachlernapp/index.html    200
