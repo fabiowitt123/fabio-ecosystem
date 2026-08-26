@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 82">
-<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#14375f"/><stop offset="1" stop-color="#2a9d8f"/></linearGradient></defs>
-<rect x="7" y="10" width="66" height="62" rx="18" fill="url(#g)"/>
-<path d="M23 31h34v20H42l-10 10V51h-9z" fill="#fff"/>
-<circle cx="33" cy="41" r="2.5" fill="#14375f"/><circle cx="41" cy="41" r="2.5" fill="#14375f"/><circle cx="49" cy="41" r="2.5" fill="#14375f"/>
-<text x="92" y="43" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" fill="#14375f">SPRACHWERK</text>
-<text x="94" y="64" font-family="Arial,Helvetica,sans-serif" font-size="13" letter-spacing="2.6" fill="#6b8297">MIT FABIO WITT</text>
-</svg>

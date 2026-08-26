@@ -1,1 +1,0 @@
-Blog header clean: exactly one v38 header and no malformed visible description fragment detected.

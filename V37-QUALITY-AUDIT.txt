@@ -1,3 +1,0 @@
-v37 STATIC QUALITY AUDIT
-
-No duplicate IDs found in static HTML audit.
