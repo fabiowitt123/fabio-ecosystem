@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="de"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1, viewport-fit=cover" name="viewport"/><title>Lehrer-Dashboard | Sprachwerk</title><link href="app.css" rel="stylesheet"/><style>
 .teacher-page{background:#f6f9fb}.teacher-wrap{width:min(1180px,calc(100% - 32px));margin:35px auto}.teacher-hero{padding:30px;border-radius:22px;background:linear-gradient(135deg,#14375f,#2a9d8f);color:#fff}.teacher-hero h1{font-size:40px;margin:6px 0}.teacher-hero p{color:#dbeaf0}.teacher-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:16px;margin-top:18px}.teacher-card{background:#fff;border:1px solid #dce6ec;border-radius:17px;padding:20px}.student{display:grid;grid-template-columns:1fr repeat(4,90px);gap:10px;align-items:center;padding:14px;border-bottom:1px solid #edf2f5}.student strong{color:#14375f}.student span{font-size:11px;color:#708697}.student b{font-size:13px;color:#2a9d8f}.assign-form{display:grid;gap:10px}.assign-form input,.assign-form textarea,.assign-form select{padding:10px;border:1px solid #bdced8;border-radius:9px}.assignment{padding:12px;border-radius:11px;background:#f5f8fa;margin:8px 0}.assignment strong,.assignment span{display:block}.assignment span{font-size:10px;color:#718697}@media(max-width:800px){.teacher-grid{grid-template-columns:1fr}.student{grid-template-columns:1fr 1fr}}</style><style>
 /* ===== v29 shared responsive navbar ===== */
@@ -70,25 +71,10 @@ body{background:
   .v38-menu a{justify-content:flex-start;padding:12px 13px}
   .v38-menu .v38-cta{justify-content:center;margin-top:4px}
 }
-</style><link href="../shared-assets/mobile-nav-v44.css" rel="stylesheet"/>
-<meta content="#0b2b45" name="theme-color"/></head>
+</style>
+<meta content="#0b2b45" name="theme-color"/><link href="/shared-assets/global-nav-v47.css" rel="stylesheet"></head>
 <body class="teacher-page">
-<header class="v38-header">
-<div class="v38-navwrap">
-<a aria-label="LERNWERK Startseite" class="v38-brand" href="/sprachlernapp/">
-<img alt="LERNWERK" src="assets/lernwerk-logo.svg"/>
-</a>
-<button aria-expanded="false" aria-label="Menü öffnen" class="v38-toggle" type="button">☰</button>
-<nav aria-label="Hauptnavigation" class="v38-menu">
-<a href="/dachwerk/">DACHWERK</a>
-<a href="/sprachschule/">SPRACHWERK</a>
-<a href="/sprachlernapp/">LERNWERK</a>
-<a href="/">Fabio Witt</a>
-<a href="/dachwerk/blog">Blog</a>
-<a class="v38-cta" href="/sprachlernapp/#kurs-kaufen">Privatunterricht-Videokurs kaufen</a>
-</nav>
-</div>
-</header><main class="teacher-wrap"><section class="teacher-hero"><span class="app-kicker">Sprachwerk Coaching</span><h1>Lehrer-Dashboard</h1><p>Fortschritt verstehen, Schwächen erkennen und gezielte Hausaufgaben vergeben.</p></section><div class="teacher-grid"><section class="teacher-card"><h2>Meine Schüler</h2><div id="student-list"><div class="student"><div><strong>Demo: Maria</strong><span>Spanisch · B1</span></div><div><span>Woche</span><b>4h 23m</b></div><div><span>Mastery</span><b>74%</b></div><div><span>Wörter</span><b>1.247</b></div><div><span>Streak</span><b>18 🔥</b></div></div><p class="account-help">Live-Daten erscheinen nach Supabase-Einrichtung und Zuordnung echter Schüler.</p></div></section><aside class="teacher-card"><h2>Hausaufgabe vergeben</h2><form class="assign-form" id="assignment-form"><input id="student-id" placeholder="Student User ID" required=""/><input id="assignment-title" placeholder="z. B. Spanisch B1 · Lektion 8" required=""/><textarea id="assignment-description" placeholder="50 Vokabeln Arbeit + Verbtest 1–30"></textarea><input id="assignment-due" type="date"/><button class="app-btn app-btn--primary">Aufgabe speichern</button></form><div id="assignment-status"></div></aside></div></main>
+<div data-eco47-nav-slot></div><main class="teacher-wrap"><section class="teacher-hero"><span class="app-kicker">Sprachwerk Coaching</span><h1>Lehrer-Dashboard</h1><p>Fortschritt verstehen, Schwächen erkennen und gezielte Hausaufgaben vergeben.</p></section><div class="teacher-grid"><section class="teacher-card"><h2>Meine Schüler</h2><div id="student-list"><div class="student"><div><strong>Demo: Maria</strong><span>Spanisch · B1</span></div><div><span>Woche</span><b>4h 23m</b></div><div><span>Mastery</span><b>74%</b></div><div><span>Wörter</span><b>1.247</b></div><div><span>Streak</span><b>18 🔥</b></div></div><p class="account-help">Live-Daten erscheinen nach Supabase-Einrichtung und Zuordnung echter Schüler.</p></div></section><aside class="teacher-card"><h2>Hausaufgabe vergeben</h2><form class="assign-form" id="assignment-form"><input id="student-id" placeholder="Student User ID" required=""/><input id="assignment-title" placeholder="z. B. Spanisch B1 · Lektion 8" required=""/><textarea id="assignment-description" placeholder="50 Vokabeln Arbeit + Verbtest 1–30"></textarea><input id="assignment-due" type="date"/><button class="app-btn app-btn--primary">Aufgabe speichern</button></form><div id="assignment-status"></div></aside></div></main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script>
 let tc=null,user=null;document.addEventListener("DOMContentLoaded",async()=>{if(!window.SUPABASE_CONFIG||SUPABASE_CONFIG.url.includes("YOUR-PROJECT"))return;tc=supabase.createClient(SUPABASE_CONFIG.url,SUPABASE_CONFIG.publishableKey);let r=await tc.auth.getUser();user=r.data.user;});
 document.getElementById("assignment-form").onsubmit=async e=>{e.preventDefault();if(!tc||!user){document.getElementById("assignment-status").textContent="Supabase zuerst konfigurieren.";return}let {error}=await tc.from("assignments").insert({teacher_id:user.id,student_id:document.getElementById("student-id").value,title:document.getElementById("assignment-title").value,description:document.getElementById("assignment-description").value,due_date:document.getElementById("assignment-due").value||null});document.getElementById("assignment-status").textContent=error?error.message:"Hausaufgabe gespeichert ✓";}
@@ -127,5 +113,5 @@ document.addEventListener("DOMContentLoaded",()=>{
     }));
   });
 });
-</script><script defer="" src="../shared-assets/mobile-nav-v44.js"></script>
-</body></html>
+</script>
+<script defer src="/shared-assets/global-nav-v47.js"></script></body></html>

@@ -1,2 +1,3 @@
-Fabio Witt Web Ecosystem v45 - Cloudflare & Mobile Edition
-Datum: 2026-08-26
+Fabio Witt Web Ecosystem - v47
+
+Unified Navigation Release: identische Navbar auf allen Seiten mit DACHWERK, SPRACHWERK, LERNWERK, Fabio Witt, CV und Blog. Kontextabhängiger CTA: Projektanfrage, SAP-Anfrage, Kursanfrage oder Kurs kaufen. Ein isolierter Mobile-Menu-Controller sorgt für zuverlässiges Öffnen und Schließen auf Smartphones.

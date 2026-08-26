@@ -1,0 +1,5 @@
+Fabio Ecosystem v46
+HTML pages updated: 60
+Unified navigation: DACHWERK | SPRACHWERK | LERNWERK | Fabio Witt | Blog | Kundenanfrage
+Mobile breakpoint: 1040px
+Legacy global headers removed; one isolated menu controller used everywhere.
