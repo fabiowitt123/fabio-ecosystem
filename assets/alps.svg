@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#092447"/><stop offset=".58" stop-color="#1d5f78"/><stop offset="1" stop-color="#d9edf3"/></linearGradient>
+<linearGradient id="lake" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a9fb0"/><stop offset="1" stop-color="#0b3b59"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<path d="M0 540 L220 365 355 472 520 250 665 430 830 210 1015 455 1185 292 1360 420 1600 250 1600 900 0 900Z" fill="#e9f2f4" opacity=".93"/>
+<path d="M0 575 L185 435 342 520 522 352 700 515 872 335 1040 520 1210 400 1400 515 1600 405 1600 900 0 900Z" fill="#688397" opacity=".88"/>
+<path d="M0 645 L265 510 410 610 610 468 790 615 1010 460 1210 605 1420 500 1600 585 1600 900 0 900Z" fill="#203b51"/>
+<rect y="655" width="1600" height="245" fill="url(#lake)"/>
+<path d="M0 760 Q330 715 590 760 T1150 750 T1600 760 V900 H0Z" fill="#0d3553" opacity=".65"/>
+<circle cx="1310" cy="145" r="86" fill="#fff" opacity=".08"/>
+</svg>

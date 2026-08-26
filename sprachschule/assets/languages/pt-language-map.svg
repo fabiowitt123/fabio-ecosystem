@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+    <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#0f3158"/><stop offset="1" stop-color="#167a55"/></linearGradient></defs>
+    <rect width="640" height="360" rx="28" fill="url(#bg)"/>
+    <circle cx="560" cy="55" r="90" fill="#fff" opacity=".08"/>
+    <g transform="translate(38 34)"><rect width="72" height="30" rx="3" fill="#fff"/><rect x="0" y="0" width="29" height="30" fill="#046A38"/><rect x="29" y="0" width="43" height="30" fill="#DA291C"/></g><text x="125" y="62" font-family="Arial" font-size="38" font-weight="700" fill="#fff">Portugiesisch</text>
+    <text x="40" y="92" font-family="Arial" font-size="15" fill="#dceaf3">Sprachporträt · eigenes Niveau B1</text>
+    <g transform="translate(5 75)">
+      <path d="M55 125 C80 90,135 75,180 92 C205 75,245 80,270 105 C290 93,320 88,345 98 C370 85,405 82,445 95 C490 105,535 135,555 165 C535 180,500 184,470 175 C445 192,405 200,370 190 C335 205,300 205,270 190 C245 205,210 205,185 190 C155 202,115 190,88 170 C65 160,52 145,55 125 Z" fill="#fff" opacity=".84"/>
+      <circle cx="252" cy="134" r="9" fill="#167a55" opacity=".95"/><circle cx="252" cy="134" r="15" fill="#167a55" opacity=".15"/><circle cx="165" cy="225" r="9" fill="#167a55" opacity=".95"/><circle cx="165" cy="225" r="15" fill="#167a55" opacity=".15"/><circle cx="350" cy="220" r="9" fill="#167a55" opacity=".95"/><circle cx="350" cy="220" r="15" fill="#167a55" opacity=".15"/><circle cx="400" cy="225" r="9" fill="#167a55" opacity=".95"/><circle cx="400" cy="225" r="15" fill="#167a55" opacity=".15"/><circle cx="285" cy="190" r="9" fill="#167a55" opacity=".95"/><circle cx="285" cy="190" r="15" fill="#167a55" opacity=".15"/><circle cx="300" cy="197" r="9" fill="#167a55" opacity=".95"/><circle cx="300" cy="197" r="15" fill="#167a55" opacity=".15"/><circle cx="315" cy="210" r="9" fill="#167a55" opacity=".95"/><circle cx="315" cy="210" r="15" fill="#167a55" opacity=".15"/><circle cx="505" cy="225" r="9" fill="#167a55" opacity=".95"/><circle cx="505" cy="225" r="15" fill="#167a55" opacity=".15"/>
+    </g>
+    <rect x="38" y="286" width="564" height="44" rx="12" fill="#fff" opacity=".12"/>
+    <text x="55" y="306" font-family="Arial" font-size="12" fill="#fff">Portugal, Brasilien & Lusophonie</text>
+    <text x="55" y="321" font-family="Arial" font-size="10.5" fill="#e6f0f5">Portugal · Brasilien · Angola · Mosambik · Kap Verde · …</text>
+    </svg>

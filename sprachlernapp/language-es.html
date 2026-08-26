@@ -1,0 +1,160 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Spanisch lernen | Sprachwerk</title><link rel="stylesheet" href="language.css"><link rel="stylesheet" href="learning-v23.css"><link rel="stylesheet" href="training-v43.css"><style>
+/* ===== v29 shared responsive navbar ===== */
+.site-header{position:sticky;top:0;z-index:1200;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,55,95,.08)}
+.nav-wrap{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;min-width:0}
+.brand img{display:block;max-height:46px;width:auto;max-width:220px}
+.main-nav{display:flex;align-items:center;gap:8px;flex-wrap:nowrap}
+.main-nav>a{display:inline-flex;align-items:center;justify-content:center;padding:9px 11px;border-radius:9px;text-decoration:none;white-space:nowrap;font-size:13px;font-weight:800}
+.main-nav>a:hover{background:#f2f6f8}
+.nav-cta{background:#14375f!important;color:#fff!important}
+.nav-toggle{display:none;border:1px solid #dce6ec;background:#fff;border-radius:10px;width:42px;height:42px;align-items:center;justify-content:center;cursor:pointer}
+.nav-toggle span,.nav-toggle:before,.nav-toggle:after{content:"";display:block;width:19px;height:2px;background:#14375f;border-radius:2px;transition:.2s}
+.nav-toggle span{margin:4px 0}
+@media(max-width:980px){
+  .nav-wrap{position:relative}
+  .nav-toggle{display:flex;flex-direction:column;flex:0 0 auto}
+  .main-nav{display:none;position:absolute;left:0;right:0;top:calc(100% + 1px);padding:12px;background:#fff;border:1px solid #dce6ec;border-radius:0 0 16px 16px;box-shadow:0 18px 38px rgba(20,55,95,.12);flex-direction:column;align-items:stretch;gap:5px}
+  .main-nav.is-open{display:flex}
+  .main-nav>a{justify-content:flex-start;width:100%;padding:12px 13px}
+  .nav-cta{justify-content:center!important;margin-top:4px}
+  .brand img{max-width:185px;max-height:42px}
+}
+@media(max-width:520px){
+  .nav-wrap{min-height:64px}
+  .brand img{max-width:155px;max-height:38px}
+}
+</style><style>
+/* ===== v30 LERNWERK brand system ===== */
+body{background:
+ radial-gradient(circle at 92% 8%,rgba(42,157,143,.08),transparent 22%),
+ linear-gradient(180deg,#f4f8fb 0,#fff 26%,#f6faf9 100%)!important}
+.site-header .brand img{max-width:205px!important;max-height:48px!important}
+.lernwerk-brand-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0a2c52 0%,#155777 55%,#29998e 100%);color:#fff}
+.lernwerk-brand-hero:before{content:"";position:absolute;inset:auto -5% 0;height:180px;opacity:.18;background:linear-gradient(135deg,transparent 0 15%,#fff 15% 27%,transparent 27% 38%,#fff 38% 51%,transparent 51% 63%,#fff 63% 77%,transparent 77%);clip-path:polygon(0 100%,0 68%,13% 44%,25% 70%,39% 29%,53% 72%,68% 42%,82% 70%,100% 34%,100% 100%)}
+.pro-dashboard,.onboarding-section,.placement-section,.mastery-overview,.account-panel,.upgrade-section{position:relative}
+.pro-dashboard:before,.onboarding-section:before,.mastery-overview:before{content:"";position:absolute;left:0;top:0;width:5px;height:100%;border-radius:20px 0 0 20px;background:linear-gradient(#2a9d8f,#14375f)}
+.pro-stats-grid article{border-top:3px solid rgba(42,157,143,.55)!important}
+.app-kicker{color:#29998e!important}
+@media(max-width:980px){.site-header .brand img{max-width:165px!important}}
+</style><style>
+/* ===== v32 contextual CTA + donation ===== */
+.context-cta{margin:36px auto;padding:28px;border-radius:22px;background:linear-gradient(135deg,#0d3158,#247c82);color:#fff;display:flex;justify-content:space-between;gap:22px;align-items:center;box-shadow:0 18px 48px rgba(20,55,95,.12)}
+.context-cta h2{margin:5px 0;font-size:30px;color:#fff}.context-cta p{margin:0;color:#dcebf1;max-width:720px}.context-cta .cta-actions{display:flex;gap:9px;flex-wrap:wrap}
+.context-cta .cta-primary,.donation-box .donate-btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:900;border:0;cursor:pointer}
+.context-cta .cta-primary{background:#fff;color:#14375f}.context-cta .cta-secondary{display:inline-flex;align-items:center;padding:12px 16px;border:1px solid #ffffff55;border-radius:10px;color:#fff;text-decoration:none;font-weight:850}
+.donation-box{margin:30px auto 0;padding:22px;border-radius:18px;border:1px solid #dce6ec;background:#fff;display:flex;justify-content:space-between;gap:18px;align-items:center}
+.donation-box h3{margin:0 0 5px;color:#14375f}.donation-box p{margin:0;color:#647a8e;font-size:12px;max-width:720px}
+.donation-box .donate-btn{background:#1776bd;color:#fff}.donation-box small{display:block;margin-top:7px;color:#8a9aa7;font-size:9px}
+@media(max-width:760px){.context-cta,.donation-box{display:block}.context-cta .cta-actions{margin-top:15px}.donation-box .donate-btn{margin-top:14px;width:100%}}
+</style><style>/* v34 final CTA */.page-final-cta{margin:32px auto;padding:0 16px}.page-final-cta__inner{width:min(1180px,100%);margin:auto;padding:26px;border-radius:20px;background:linear-gradient(135deg,#0d3158,#247c82);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:20px}.page-final-cta__inner span{font-size:9px;font-weight:900;letter-spacing:.12em;color:#8ee4d0}.page-final-cta__inner h2{margin:6px 0;color:#fff;font-size:28px}.page-final-cta__inner p{margin:0;color:#dcebf1;max-width:720px}.page-final-cta__inner>a{flex:0 0 auto;padding:12px 15px;border-radius:10px;background:#fff;color:#14375f;text-decoration:none;font-weight:900}@media(max-width:720px){.page-final-cta__inner{display:block}.page-final-cta__inner>a{display:inline-flex;margin-top:14px}}</style><style>.lw-language-mascot{position:fixed;right:14px;bottom:14px;z-index:50;display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #dce6ec;border-radius:999px;padding:7px 10px;box-shadow:0 10px 28px #0002}.lw-language-mascot img{width:42px;height:42px;border-radius:50%;object-fit:cover}.lw-language-mascot span{font-size:10px;font-weight:900;color:#14375f}@media(max-width:600px){.lw-language-mascot span{display:none}}</style><style>/* v37 shared quality */html{scroll-behavior:smooth}body{overflow-x:hidden}img,svg,video{max-width:100%}input,select,textarea,button{box-sizing:border-box}@media(max-width:980px){.main-nav{max-height:calc(100vh - 70px);overflow:auto}}</style><style>
+/* ===== v38 unified navbar ===== */
+.v38-header{position:sticky;top:0;z-index:2000;background:rgba(255,255,255,.98);backdrop-filter:blur(14px);border-bottom:1px solid #dce6ec}
+.v38-navwrap{width:min(1180px,calc(100% - 32px));min-height:74px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.v38-brand{display:flex;align-items:center;text-decoration:none;flex:0 0 auto;min-width:0}
+.v38-brand img{display:block;height:44px;width:auto;max-width:220px}
+.v38-brand-text{font-size:23px;font-weight:900;letter-spacing:.035em;color:#14375f}
+.v38-menu{display:flex;align-items:center;gap:8px}
+.v38-menu a{display:inline-flex;align-items:center;justify-content:center;padding:9px 11px;border-radius:9px;color:#17324d;text-decoration:none;font-size:13px;font-weight:850;white-space:nowrap}
+.v38-menu a:hover,.v38-menu a[aria-current="page"]{background:#eef4f7}
+.v38-menu .v38-cta{background:#14375f;color:#fff!important;padding:11px 14px}
+.v38-toggle{display:none;width:42px;height:42px;border:1px solid #dce6ec;background:#fff;border-radius:10px;cursor:pointer;align-items:center;justify-content:center;font-size:20px;color:#14375f}
+@media(max-width:980px){
+  .v38-navwrap{position:relative;min-height:66px}
+  .v38-brand img{height:38px;max-width:180px}
+  .v38-toggle{display:flex}
+  .v38-menu{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border:1px solid #dce6ec;border-top:0;border-radius:0 0 16px 16px;box-shadow:0 18px 36px rgba(20,55,95,.12);padding:12px;flex-direction:column;align-items:stretch;gap:4px;max-height:calc(100vh - 72px);overflow:auto}
+  .v38-menu.open{display:flex}
+  .v38-menu a{justify-content:flex-start;padding:12px 13px}
+  .v38-menu .v38-cta{justify-content:center;margin-top:4px}
+}
+</style></head><body data-lang="es">
+<header class="v38-header">
+  <div class="v38-navwrap">
+    <a class="v38-brand" href="index.html" aria-label="LERNWERK Startseite">
+      <img src="assets/lernwerk-logo.svg" alt="LERNWERK">
+    </a>
+    <button class="v38-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <nav class="v38-menu" aria-label="Hauptnavigation">
+      <a href="../dachwerk/index.html">DACHWERK</a>
+      <a href="../sprachschule/index.html">SPRACHWERK</a>
+      <a href="index.html" >LERNWERK</a>
+      <a href="../index.html">Fabio Witt</a>
+      <a href="../dachwerk/blog.html">Blog</a>
+      <a href="index.html#kurs-kaufen" class="v38-cta">Privatunterricht-Videokurs kaufen</a>
+    </nav>
+  </div>
+</header>
+<div class="lw-lang-breadcrumb">
+  <div class="lw-lang-breadcrumb-inner">
+    <a href="index.html#learning-path">← Alle Sprachen</a>
+    <span>🇪🇸 Spanisch</span>
+  </div>
+</div>
+
+<div class="lw-language-mascot"><img src="assets/lernwerk-pirat-vector.svg" alt=""><span>🏴‍☠️ Nächste Lektion schaffen!</span></div>
+<section class="lang-hero"><div class="wrap hero-row"><img class="hero-flag" src="../shared-assets/flags/es.svg" alt="Spanien"><div><span class="eyebrow">Dein persönlicher Lernpfad</span><h1 id="lang-name">Spanisch</h1><p>A1 bis C1 · 20 Grammatiklektionen · 1.000 Vokabeln · 100 Verbtabellen · Wiederholungssystem</p></div></div></section>
+<section class="lw-lang-area-note">
+  <div class="wrap">
+    <strong>🇪🇸 Dein Spanisch-Lernbereich</strong>
+    <span>Alle Inhalte auf dieser Seite gehören ausschließlich zu Spanisch: Grammatik, Vokabeln, Verbtabellen, Geschichten und Tests.</span>
+  </div>
+</section>
+
+<section class="learning-dashboard"><div class="wrap">
+<div class="dash-grid">
+ <article class="dash-card dash-main"><span class="dash-label">Aktuelles Niveau</span><strong id="cefr-current">A1</strong><p id="cefr-copy">Grundlagen</p><div class="progress"><i id="overall-bar"></i></div><small id="overall-label">0 / 20 Lektionen</small></article>
+ <article class="dash-card"><span class="dash-label">Heute</span><strong id="daily-xp">0 / 50 XP</strong><div class="progress"><i id="daily-bar"></i></div><small id="daily-tasks">0 Aufgaben abgeschlossen</small></article>
+ <article class="dash-card"><span class="dash-label">Wiederholen</span><strong id="due-count">0</strong><p>Vokabeln heute fällig</p><button class="mini-btn" data-open="review-panel">Wiederholung starten</button></article>
+ <article class="dash-card"><span class="dash-label">Meine Fehler</span><strong id="error-count">0</strong><p>offene Fehler</p><button class="mini-btn" data-open="errors-panel">Fehler trainieren</button></article>
+ <article class="dash-card"><span class="dash-label">Favoriten</span><strong id="fav-count">0</strong><p>gespeicherte Wörter & Verben</p><button class="mini-btn" data-open="favorites-panel">Favoriten öffnen</button></article>
+</div>
+<div class="cefr-path" id="cefr-path"></div>
+</div></section>
+<nav class="tabs"><div class="wrap"><button class="tab active" data-tab="grammar-panel">Grammatik</button><button class="tab" data-tab="vocab-panel">Vokabeln</button><button class="tab" data-tab="verbs-panel">Verbtabellen</button><button class="tab" data-tab="review-panel">Wiederholen</button><button class="tab" data-tab="errors-panel">Meine Fehler</button><button class="tab" data-tab="favorites-panel">Favoriten</button></div></nav>
+<main>
+<section class="panel active" id="grammar-panel"><div class="wrap"><div class="section-head"><h2>A1–C1 Grammatik-Lernpfad</h2><p>Vier Lektionen pro Niveau. Eine neue Lektion wird freigeschaltet, wenn die vorherige bestanden wurde.</p></div><div id="grammar-levels"></div></div></section>
+<section class="panel" id="vocab-panel"><div class="wrap"><div class="section-head"><h2>Vokabeltrainer mit Spaced Repetition</h2><p>Bewerte Wörter mit Nochmal, Schwer, Gut oder Einfach. Daraus berechnet die App automatisch die nächste Wiederholung.</p></div><div class="vocab-toolbar"><input id="vocab-search" type="search" placeholder="Vokabel oder Kategorie suchen …"><select id="vocab-category"><option value="">Alle Kategorien</option></select></div><div class="vocab-review-card" id="vocab-review-card"></div><div class="vocab-grid" id="vocab-grid"></div></div></section>
+<section class="panel" id="verbs-panel"><div class="wrap"><div class="section-head"><h2>100 häufige Verben</h2><p>Konjugationen in Präsens, Vergangenheit und Zukunft. Markiere wichtige Verben als Favoriten.</p></div><div class="searchbar"><input id="verb-search" type="search" placeholder="Verb suchen …"></div><div class="verb-grid" id="verb-grid"></div></div></section>
+<section class="panel" id="review-panel"><div class="wrap"><div class="section-head"><h2>Heute wiederholen</h2><p>Fällige Vokabeln werden nach deinem persönlichen Wiederholungsplan angezeigt.</p></div><div id="review-deck"></div></div></section>
+<section class="panel" id="errors-panel"><div class="wrap"><div class="section-head"><h2>Meine Fehler</h2><p>Falsch beantwortete Grammatikfragen und schwierige Vokabeln werden hier automatisch gesammelt.</p></div><div id="error-list" class="stack-list"></div></div></section>
+<section class="panel" id="favorites-panel"><div class="wrap"><div class="section-head"><h2>Favoriten</h2><p>Deine gemerkten Vokabeln und Verben an einem Ort.</p></div><div id="favorite-list" class="stack-list"></div></div></section>
+<section class="panel" id="stories-panel"><div class="wrap"><div class="section-head"><h2>Geschichten & Hörverständnis</h2><p>15 Texte von A1 bis C1 mit Audio, Verständnisfragen und Wortschatzarbeit.</p></div><div class="story-level-filter" id="story-level-filter"></div><div class="story-grid" id="story-grid"></div></div></section></main>
+<dialog id="content-dialog"><button class="close" id="dialog-close">×</button><div class="modal-inner" id="dialog-content"></div></dialog>
+<script src="data.js"></script><script src="verbs-data.js"></script><script src="grammar-v23.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="learning-v23.js"></script><script src="training-v43.js"></script><script src="../shared-assets/site-config.js"></script>
+<script data-paypal-script="v32">
+document.addEventListener("DOMContentLoaded",()=>{
+  document.querySelectorAll("[data-paypal-donate]").forEach(a=>{
+    const url=window.FW_SITE_CONFIG?.paypalDonationUrl||"";
+    if(url && !url.includes("DEIN_PAYPAL_BUTTON_ID")) a.href=url;
+    else {
+      a.addEventListener("click",e=>{
+        e.preventDefault();
+        alert("PayPal-Spendenlink ist noch nicht konfiguriert. Bitte die echte PayPal-Donate-ID in shared-assets/site-config.js eintragen.");
+      });
+    }
+  });
+});
+</script>
+
+<section class="page-final-cta">
+  <div class="page-final-cta__inner">
+    <div><span>LERNWERK</span><h2>Jetzt mit LERNWERK starten</h2><p>Wähle deinen Lernplan und starte mit dem vollständigen digitalen Sprachkurs.</p></div>
+    <a href="index.html#kurs-kaufen">Kurs kaufen</a>
+  </div>
+</section>
+<script data-nav-script="v38">
+document.addEventListener("DOMContentLoaded",()=>{
+  document.querySelectorAll(".v38-header").forEach(header=>{
+    const btn=header.querySelector(".v38-toggle"),menu=header.querySelector(".v38-menu");
+    if(!btn||!menu)return;
+    btn.addEventListener("click",()=>{
+      const open=menu.classList.toggle("open");
+      btn.setAttribute("aria-expanded",String(open));
+    });
+    menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{
+      menu.classList.remove("open");btn.setAttribute("aria-expanded","false");
+    }));
+  });
+});
+</script></body></html>

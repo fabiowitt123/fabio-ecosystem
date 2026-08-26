@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" role="img" aria-label="Deutschland">
+  <rect width="30" height="20" rx="2" fill="#ffce00"/>
+  <rect width="30" height="13.333" rx="2" fill="#dd0000"/>
+  <path d="M2 0h26a2 2 0 0 1 2 2v4.667H0V2a2 2 0 0 1 2-2Z" fill="#000"/>
+</svg>

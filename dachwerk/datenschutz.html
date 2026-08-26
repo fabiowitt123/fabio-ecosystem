@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Datenschutzerklärung von DACHWERK Consulting." name="description"/>
+<meta content="noindex,follow" name="robots"/>
+<meta content="#071a2b" name="theme-color"/>
+<title>Datenschutz | DACHWERK Consulting</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
+<style>
+/* ===== Unified DACHWERK Navbar ===== */
+.site-header{
+  position:sticky;top:0;z-index:1000;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(13,35,66,.10);
+}
+.site-header .nav-wrap{
+  width:min(1180px,calc(100% - 36px));
+  margin:auto;height:76px;display:flex;align-items:center;
+  justify-content:space-between;gap:24px;
+}
+.site-header .brand{display:flex;align-items:center;flex:0 0 auto}
+.site-header .brand img{display:block;width:220px;max-height:48px;object-fit:contain}
+.site-header .main-nav{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:700}
+.site-header .main-nav a{color:#17324d;text-decoration:none;white-space:nowrap}
+.site-header .main-nav a:hover{color:#149a72}
+.site-header .nav-cta{
+  background:#149a72;color:#fff!important;padding:11px 15px;
+  border-radius:9px;box-shadow:0 8px 20px rgba(20,154,114,.20)
+}
+.site-header .nav-toggle{
+  display:none;background:transparent;border:0;padding:8px;cursor:pointer
+}
+.site-header .nav-toggle span{
+  display:block;width:24px;height:2px;background:#17324d;margin:5px 0
+}
+@media(max-width:980px){
+  .site-header .nav-toggle{display:block}
+  .site-header .main-nav{
+    display:none;position:absolute;left:0;right:0;top:76px;
+    background:#fff;border-bottom:1px solid rgba(13,35,66,.10);
+    box-shadow:0 18px 45px rgba(13,35,66,.10);
+    padding:18px;flex-direction:column;align-items:flex-start;gap:14px
+  }
+  .site-header .main-nav.is-open{display:flex}
+  .site-header .nav-wrap{position:relative}
+}
+@media(max-width:620px){
+  .site-header .brand img{width:185px}
+}
+</style>
+<style>
+.flag-icon{display:inline-block!important;width:24px!important;height:16px!important;object-fit:cover!important;vertical-align:-3px!important;border-radius:2px!important;box-shadow:0 0 0 1px rgba(13,35,66,.13)!important;margin:0 3px!important}
+.flag-card-img{display:block!important;width:34px!important;height:23px!important;object-fit:cover!important;border-radius:3px!important;box-shadow:0 0 0 1px rgba(13,35,66,.12)!important}
+.flag-course-icon{padding:0!important;overflow:hidden!important;background:#fff!important}
+.flag-course-icon .flag-card-img{width:48px!important;height:48px!important;object-fit:cover!important;border-radius:12px!important}
+.flag-badge-real{height:42px;display:flex;align-items:center}
+.flag-badge-real .flag-icon{width:48px!important;height:32px!important;border-radius:4px!important;margin:0!important}
+.teacher-language-pills .flag-icon{width:25px!important;height:17px!important}
+.flag-ribbon .flag-icon{width:48px!important;height:32px!important;border-radius:4px!important;margin:0!important}
+.language-blog-hero .flag-icon{width:42px!important;height:28px!important;margin:0 5px!important}
+</style>
+<style>
+/* ===== v29 shared responsive navbar ===== */
+.site-header{position:sticky;top:0;z-index:1200;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,55,95,.08)}
+.nav-wrap{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;min-width:0}
+.brand img{display:block;max-height:46px;width:auto;max-width:220px}
+.main-nav{display:flex;align-items:center;gap:8px;flex-wrap:nowrap}
+.main-nav>a{display:inline-flex;align-items:center;justify-content:center;padding:9px 11px;border-radius:9px;text-decoration:none;white-space:nowrap;font-size:13px;font-weight:800}
+.main-nav>a:hover{background:#f2f6f8}
+.nav-cta{background:#14375f!important;color:#fff!important}
+.nav-toggle{display:none;border:1px solid #dce6ec;background:#fff;border-radius:10px;width:42px;height:42px;align-items:center;justify-content:center;cursor:pointer}
+.nav-toggle span,.nav-toggle:before,.nav-toggle:after{content:"";display:block;width:19px;height:2px;background:#14375f;border-radius:2px;transition:.2s}
+.nav-toggle span{margin:4px 0}
+@media(max-width:980px){
+  .nav-wrap{position:relative}
+  .nav-toggle{display:flex;flex-direction:column;flex:0 0 auto}
+  .main-nav{display:none;position:absolute;left:0;right:0;top:calc(100% + 1px);padding:12px;background:#fff;border:1px solid #dce6ec;border-radius:0 0 16px 16px;box-shadow:0 18px 38px rgba(20,55,95,.12);flex-direction:column;align-items:stretch;gap:5px}
+  .main-nav.is-open{display:flex}
+  .main-nav>a{justify-content:flex-start;width:100%;padding:12px 13px}
+  .nav-cta{justify-content:center!important;margin-top:4px}
+  .brand img{max-width:185px;max-height:42px}
+}
+@media(max-width:520px){
+  .nav-wrap{min-height:64px}
+  .brand img{max-width:155px;max-height:38px}
+}
+</style><style>
+/* ===== v32 contextual CTA + donation ===== */
+.context-cta{margin:36px auto;padding:28px;border-radius:22px;background:linear-gradient(135deg,#0d3158,#247c82);color:#fff;display:flex;justify-content:space-between;gap:22px;align-items:center;box-shadow:0 18px 48px rgba(20,55,95,.12)}
+.context-cta h2{margin:5px 0;font-size:30px;color:#fff}.context-cta p{margin:0;color:#dcebf1;max-width:720px}.context-cta .cta-actions{display:flex;gap:9px;flex-wrap:wrap}
+.context-cta .cta-primary,.donation-box .donate-btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:900;border:0;cursor:pointer}
+.context-cta .cta-primary{background:#fff;color:#14375f}.context-cta .cta-secondary{display:inline-flex;align-items:center;padding:12px 16px;border:1px solid #ffffff55;border-radius:10px;color:#fff;text-decoration:none;font-weight:850}
+.donation-box{margin:30px auto 0;padding:22px;border-radius:18px;border:1px solid #dce6ec;background:#fff;display:flex;justify-content:space-between;gap:18px;align-items:center}
+.donation-box h3{margin:0 0 5px;color:#14375f}.donation-box p{margin:0;color:#647a8e;font-size:12px;max-width:720px}
+.donation-box .donate-btn{background:#1776bd;color:#fff}.donation-box small{display:block;margin-top:7px;color:#8a9aa7;font-size:9px}
+@media(max-width:760px){.context-cta,.donation-box{display:block}.context-cta .cta-actions{margin-top:15px}.donation-box .donate-btn{margin-top:14px;width:100%}}
+</style><style>/* v34 final CTA */.page-final-cta{margin:32px auto;padding:0 16px}.page-final-cta__inner{width:min(1180px,100%);margin:auto;padding:26px;border-radius:20px;background:linear-gradient(135deg,#0d3158,#247c82);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:20px}.page-final-cta__inner span{font-size:9px;font-weight:900;letter-spacing:.12em;color:#8ee4d0}.page-final-cta__inner h2{margin:6px 0;color:#fff;font-size:28px}.page-final-cta__inner p{margin:0;color:#dcebf1;max-width:720px}.page-final-cta__inner>a{flex:0 0 auto;padding:12px 15px;border-radius:10px;background:#fff;color:#14375f;text-decoration:none;font-weight:900}@media(max-width:720px){.page-final-cta__inner{display:block}.page-final-cta__inner>a{display:inline-flex;margin-top:14px}}</style><style>/* v37 shared quality */html{scroll-behavior:smooth}body{overflow-x:hidden}img,svg,video{max-width:100%}input,select,textarea,button{box-sizing:border-box}@media(max-width:980px){.main-nav{max-height:calc(100vh - 70px);overflow:auto}}</style></head>
+<body>
+
+
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="../dachwerk/index.html" aria-label="DACHWERK Startseite">
+      <img src="../dachwerk/assets/logo.svg" alt="DACHWERK">
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="Navigation öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="global-nav" aria-label="Hauptnavigation">
+      <a href="../dachwerk/index.html">DACHWERK</a>
+      <a href="../sprachschule/index.html">SPRACHWERK</a>
+      <a href="../sprachlernapp/index.html">LERNWERK</a>
+      <a href="../index.html">Fabio Witt</a>
+      <a href="../dachwerk/blog.html">Blog</a>
+      <a href="index.html#sap-anfrage" class="nav-cta">SAP-Anfrage</a>
+    </nav>
+  </div>
+</header>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<div class="topbar"><div class="container topbar__inner"><p><span aria-hidden="true" class="status-dot"></span> Deutschland · Schweiz · DACH</p><p class="topbar__meta">SAP Produktion &amp; Supply Chain</p></div></div>
+
+<main id="main">
+<section class="utility-hero">
+<div class="container">
+<p class="eyebrow eyebrow--light">Rechtliches</p>
+<h1>Datenschutzerklärung</h1>
+<p>Informationen zur Verarbeitung personenbezogener Daten auf dieser Website. Bitte passen Sie die Vorlage an Ihre tatsächliche Gesellschaft, Netlify-Konfiguration und internen Abläufe an.</p>
+</div>
+</section>
+<section class="utility-main">
+<div class="container legal-layout">
+<aside class="legal-sidebar">
+<div class="placeholder-alert">
+<strong>Rechtliche Prüfung erforderlich</strong>
+            Gelb markierte Angaben müssen vor Veröffentlichung ersetzt oder bestätigt werden. Prüfen Sie außerdem AV-Vertrag, Drittlandtransfer, Löschfristen und Benachrichtigungen in Ihrem Netlify-Konto.
+          </div>
+<div class="legal-sidebar__card">
+<h2>Stand</h2>
+<p>14. August 2026</p>
+<a href="impressum.html">Zum Impressum →</a>
+</div>
+</aside>
+<article class="legal-content">
+<section>
+<h2>1. Verantwortliche Stelle</h2>
+<p>
+<span class="placeholder">[VOLLSTÄNDIGER FIRMENNAME UND RECHTSFORM]</span><br/>
+<span class="placeholder">[STRASSE UND HAUSNUMMER]</span><br/>
+<span class="placeholder">[PLZ, ORT, LAND]</span><br/>
+              E-Mail: <span class="placeholder">[DATENSCHUTZ- ODER KONTAKT-E-MAIL]</span><br/>
+              Telefon: <span class="placeholder">[TELEFONNUMMER]</span>
+</p>
+<p>Sofern ein Datenschutzbeauftragter bestellt ist, ergänzen Sie hier dessen Kontaktdaten: <span class="placeholder">[KONTAKTDATEN ODER ABSCHNITT ENTFERNEN]</span>.</p>
+</section>
+<section>
+<h2>2. Grundsätze der Datenverarbeitung</h2>
+<p>Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung dieser Website, zur Bearbeitung von Anfragen, zur Durchführung vorvertraglicher Maßnahmen, zur Erfüllung vertraglicher Pflichten oder zur Wahrung berechtigter Interessen erforderlich ist. Maßgeblich sind insbesondere die Datenschutz-Grundverordnung sowie die jeweils anwendbaren nationalen Datenschutzvorschriften.</p>
+<p>Soweit die verantwortliche Gesellschaft in der Schweiz sitzt oder Datenverarbeitungen dem Schweizer Datenschutzgesetz unterliegen, sind dessen Anforderungen zusätzlich zu berücksichtigen.</p>
+</section>
+<section>
+<h2>3. Hosting über Netlify</h2>
+<p>Diese Website wird über Netlify, Inc., einen Anbieter mit Sitz in den USA, bereitgestellt. Beim Aufruf der Website können technisch erforderliche Verbindungs- und Protokolldaten verarbeitet werden. Dazu können insbesondere IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Ressource, übertragene Datenmenge, Referrer, Browsertyp, Betriebssystem und Statuscode gehören.</p>
+<p>Die Verarbeitung erfolgt zur sicheren und effizienten Bereitstellung der Website, zur Fehleranalyse sowie zur Abwehr von Missbrauch. Rechtsgrundlage ist regelmäßig Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in einem sicheren, stabilen und performanten Onlineangebot.</p>
+<p>Netlify kann Daten in den USA oder weiteren Ländern verarbeiten. Netlify erklärt eine Zertifizierung unter dem EU-U.S. Data Privacy Framework und dem Swiss-U.S. Data Privacy Framework. Für die konkrete Nutzung sind zusätzlich die in Ihrem Netlify-Konto verfügbaren Auftragsverarbeitungs- und Transferunterlagen maßgeblich.</p>
+<p><span class="placeholder">[BESTÄTIGEN UND GGF. ERGÄNZEN: AV-VERTRAG ABGESCHLOSSEN; EINSCHLÄGIGER TRANSFERMECHANISMUS; TATSÄCHLICH GENUTZTER TARIF]</span></p>
+</section>
+<section>
+<h2>4. Kontakt- und Projektanfragen</h2>
+<p>Wenn Sie das Kontaktformular nutzen, verarbeiten wir die von Ihnen eingegebenen Angaben. Dazu gehören je nach Eingabe Name, Unternehmen, geschäftliche E-Mail-Adresse, Telefonnummer, Projektschwerpunkt, Projektphase und Nachricht.</p>
+<h3>Zwecke und Rechtsgrundlagen</h3>
+<p>Die Verarbeitung dient der Bearbeitung Ihrer Anfrage, der Kommunikation und gegebenenfalls der Vorbereitung eines Vertrags. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit Ihre Anfrage auf vorvertragliche Maßnahmen oder einen Vertrag gerichtet ist. In anderen Fällen kann Art. 6 Abs. 1 lit. f DSGVO einschlägig sein; unser berechtigtes Interesse liegt in der sachgerechten Bearbeitung geschäftlicher Anfragen.</p>
+<h3>Formularverarbeitung</h3>
+<p>Das Formular nutzt Netlify Forms. Die Formulardaten werden im Netlify-Konto des Websitebetreibers gespeichert und können – abhängig von der eingerichteten Benachrichtigung – zusätzlich per E-Mail oder über angebundene Dienste übermittelt werden.</p>
+<p><span class="placeholder">[ERGÄNZEN: KONKRETE BENACHRICHTIGUNGSEMPFÄNGER UND ETWAIGE WEITERE DIENSTE; NICHT GENUTZTE PASSAGE ENTFERNEN]</span></p>
+<h3>Speicherdauer</h3>
+<p>Wir löschen Anfragen, sobald sie für die genannten Zwecke nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Legen Sie hierfür einen konkreten Prüf- und Löschzyklus fest.</p>
+<p><span class="placeholder">[KONKRETE LÖSCHFRIST FESTLEGEN, Z. B. REGELMÄSSIGE PRÜFUNG NACH 6 ODER 12 MONATEN]</span></p>
+</section>
+<section>
+<h2>5. Empfänger und Auftragsverarbeiter</h2>
+<p>Innerhalb unseres Unternehmens erhalten nur Personen Zugriff, die die Daten zur Bearbeitung der Anfrage oder zur Erfüllung ihrer Aufgaben benötigen. Externe Dienstleister erhalten Daten nur auf vertraglicher Grundlage und soweit dies für die jeweilige Leistung erforderlich ist.</p>
+<p>Aktuell für diese Website vorgesehen:</p>
+<ul>
+<li>Netlify, Inc. – Hosting und Formularverarbeitung</li>
+<li><span class="placeholder">[E-MAIL-PROVIDER FÜR FORMULARBENACHRICHTIGUNGEN]</span></li>
+<li><span class="placeholder">[WEITERE TATSÄCHLICH EINGESETZTE DIENSTE ODER ZEILEN ENTFERNEN]</span></li>
+</ul>
+</section>
+<section>
+<h2>6. Cookies, Analyse und externe Inhalte</h2>
+<p>Die ausgelieferte Version dieser Website bindet keine externen Schriftarten, Analysewerkzeuge, Marketing-Pixel, Videos, Karten oder Social-Media-Widgets ein. Der eigene Website-Code setzt keine Analyse- oder Marketing-Cookies und verwendet keinen lokalen Browserspeicher.</p>
+<p>Ändern Sie diesen Abschnitt, bevor Sie später Analyse-, Terminbuchungs-, Chat-, Karten-, Video- oder andere Drittanbieterdienste ergänzen. Je nach Dienst kann eine vorherige Einwilligung erforderlich sein.</p>
+</section>
+<section>
+<h2>7. Verschlüsselung und Sicherheit</h2>
+<p>Die Website soll ausschließlich über HTTPS bereitgestellt werden. Zusätzlich enthält das ausgelieferte Paket Sicherheitsheader, die unter anderem das Einbetten der Website in fremde Frames und das Laden nicht freigegebener Ressourcen einschränken. Trotz angemessener technischer und organisatorischer Maßnahmen kann bei Datenübertragungen im Internet kein absoluter Schutz garantiert werden.</p>
+</section>
+<section>
+<h2>8. Pflicht zur Bereitstellung</h2>
+<p>Die Bereitstellung Ihrer Daten ist weder gesetzlich noch vertraglich vorgeschrieben. Ohne die als Pflichtfelder gekennzeichneten Angaben können wir Ihre Anfrage jedoch nicht über das Formular bearbeiten.</p>
+</section>
+<section>
+<h2>9. Automatisierte Entscheidungen</h2>
+<p>Eine ausschließlich automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO findet im Rahmen dieser Website nicht statt.</p>
+</section>
+<section>
+<h2>10. Ihre Rechte</h2>
+<p>Unter den gesetzlichen Voraussetzungen haben Sie insbesondere das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Soweit eine Verarbeitung auf Ihrer Einwilligung beruht, können Sie diese mit Wirkung für die Zukunft widerrufen.</p>
+<p>Zur Ausübung Ihrer Rechte genügt eine Nachricht an die oben genannte Kontaktadresse. Wir können zusätzliche Informationen anfordern, wenn dies zur eindeutigen Identifizierung erforderlich ist.</p>
+</section>
+<section>
+<h2>11. Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen</h2>
+<p>Sie können aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit gegen Verarbeitungen Widerspruch einlegen, die auf Art. 6 Abs. 1 lit. f DSGVO beruhen. Wir verarbeiten die betroffenen Daten dann grundsätzlich nicht weiter, es sei denn, zwingende schutzwürdige Gründe überwiegen oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</p>
+</section>
+<section>
+<h2>12. Beschwerderecht</h2>
+<p>Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren. Zuständig ist insbesondere die Aufsichtsbehörde am Sitz der verantwortlichen Stelle oder an Ihrem Aufenthalts- beziehungsweise Arbeitsort.</p>
+<p><span class="placeholder">[ZUSTÄNDIGE AUFSICHTSBEHÖRDE MIT KONTAKTDATEN ERGÄNZEN]</span></p>
+</section>
+<section>
+<h2>13. Änderungen dieser Datenschutzerklärung</h2>
+<p>Wir passen diese Datenschutzerklärung an, wenn sich Funktionen, Dienstleister oder rechtliche Anforderungen ändern. Es gilt die auf dieser Seite veröffentlichte Fassung.</p>
+</section>
+<section>
+<h2>14. Hinweis zur Vorlage</h2>
+<p>Diese Datenschutzerklärung ist eine technische und redaktionelle Ausgangsbasis, keine individuelle Rechtsberatung. Sie muss mit den tatsächlich eingesetzten Diensten, Verträgen, Speicherfristen, Zugriffen und organisatorischen Abläufen übereinstimmen.</p>
+</section>
+</article>
+</div>
+</section>
+</main>
+
+<section class="page-final-cta">
+  <div class="page-final-cta__inner">
+    <div><span>DACHWERK · SAP</span><h2>SAP-Projekt konkret besprechen</h2><p>PP/PPDS, PEO, MM, Supply Chain, Cloud oder Transformation – senden Sie uns Ihre Projektanforderung.</p></div>
+    <a href="index.html#sap-anfrage">SAP-Anfrage</a>
+  </div>
+</section>
+<footer class="site-footer site-footer--v3 footer-v16">
+<div class="container footer__top">
+<div class="footer__brand">
+<img alt="DACHWERK SAP Consulting" height="56" src="assets/logo-light.svg" width="260"/>
+<p>Deutsch-schweizerisch geführte SAP-Beratung für Produktion, Materialwirtschaft, Supply Chain und S/4HANA-Transformation im Mittelstand.</p>
+<div aria-label="Märkte, Delivery-Standorte und Projektsprachen" class="footer-markets">
+<span class="footer-market-pill"><span aria-hidden="true" class="flag-stack"><img alt="" class="flag-icon" height="20" src="assets/flag-de.svg" width="30"/><img alt="" class="flag-icon" height="20" src="assets/flag-at.svg" width="30"/><img alt="" class="flag-icon" height="20" src="assets/flag-ch.svg" width="30"/></span><span class="footer-market-pill__text"><strong>DACH</strong><small>Kundenführung &amp; Projektleitung</small></span></span>
+<span class="footer-market-pill footer-market--language"><img alt="Englisch" class="flag-icon" height="20" src="assets/flag-gb.svg" width="30"/><span class="footer-market-pill__text"><strong>Deutsch / English</strong><small>Projektsprachen</small></span></span>
+<span class="footer-market-pill footer-market--delivery"><span class="flag-stack"><img alt="Pakistan" class="flag-icon" height="20" src="assets/flag-pk.svg" width="30"/><img alt="Indien" class="flag-icon" height="20" src="assets/flag-in.svg" width="30"/></span><span class="footer-market-pill__text"><strong>Pakistan &amp; Indien</strong><small>Senior SAP Delivery</small></span></span>
+</div>
+</div>
+<div class="footer__nav footer__nav--v16">
+<div><h2>SAP-Beratung</h2><a href="sap-pp-beratung/">SAP PP Beratung</a><a href="sap-ppds-beratung/">SAP PP/DS Beratung</a><a href="sap-peo-beratung/">SAP PEO Beratung</a><a href="sap-mm-beratung/">SAP MM Beratung</a><a href="sap-cloud-alm-beratung/">SAP Cloud ALM</a><a href="sap-signavio-beratung/">SAP Signavio</a></div>
+<div><h2>Projektstart</h2><a href="projekt-check.html">SAP-Projekt-Check</a><a href="team-matching.html">Team-Matching</a><a href="use-cases.html">Use Cases</a><a href="sap-readiness-check.html">Readiness Check PDF</a><a href="index.html?anfrage=erstgespraech#kontakt">30-Minuten-Gespräch</a></div>
+<div><h2>Wissenshub</h2><a href="blog.html">SAP Blog</a><a href="sap-glossar.html">SAP Glossar A-Z</a><a href="blog.html#movement-types">Movement Types</a><a href="blog.html#goods-movements">Goods Movements</a><a href="blog.html#integrated-toolchain">Integrated Toolchain</a></div>
+<div><h2>Unternehmen</h2><a href="index.html#team">Geschäftsleitung &amp; Team</a><a href="index.html#delivery">Delivery-Modell</a><a href="index.html#projektphasen">Projektphasen</a><a href="index.html#kontakt">Kontakt</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+</div>
+</div>
+<div class="container footer__bottom">
+<p>© <span data-year="">2026</span> DACHWERK Consulting. Alle Rechte vorbehalten.</p>
+<p class="trademark-note">SAP ist eine Marke oder eingetragene Marke der SAP SE. DACHWERK Consulting ist ein unabhängiges Beratungsunternehmen und nicht mit SAP SE verbunden.</p>
+</div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.site-header').forEach(function(header){
+    const btn = header.querySelector('.nav-toggle');
+    const nav = header.querySelector('.main-nav');
+    if(!btn || !nav) return;
+    btn.addEventListener('click', function(){
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('is-open');
+        btn.setAttribute('aria-expanded','false');
+      });
+    });
+  });
+});
+</script>
+
+<script data-nav-script="v29">
+document.addEventListener("DOMContentLoaded",()=>{
+  const btn=document.querySelector(".nav-toggle"), nav=document.querySelector(".main-nav");
+  if(!btn||!nav)return;
+  btn.addEventListener("click",()=>{
+    const open=nav.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded",String(open));
+  });
+  nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{
+    nav.classList.remove("is-open");btn.setAttribute("aria-expanded","false");
+  }));
+  window.addEventListener("resize",()=>{
+    if(window.innerWidth>980){nav.classList.remove("is-open");btn.setAttribute("aria-expanded","false")}
+  });
+});
+</script><script src="../shared-assets/site-config.js"></script>
+<script data-paypal-script="v32">
+document.addEventListener("DOMContentLoaded",()=>{
+  document.querySelectorAll("[data-paypal-donate]").forEach(a=>{
+    const url=window.FW_SITE_CONFIG?.paypalDonationUrl||"";
+    if(url && !url.includes("DEIN_PAYPAL_BUTTON_ID")) a.href=url;
+    else {
+      a.addEventListener("click",e=>{
+        e.preventDefault();
+        alert("PayPal-Spendenlink ist noch nicht konfiguriert. Bitte die echte PayPal-Donate-ID in shared-assets/site-config.js eintragen.");
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
