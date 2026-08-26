@@ -1,0 +1,12 @@
+FABIO WITT – INTEGRIERTES WEBSITE-PAKET
+
+/                       Fabio Witt persönliche SAP-Consulting-Seite
+/dachwerk/blog.html     Zentraler SAP Blog (DACHWERK + Fabio Witt)
+/dachwerk/              DACHWERK Consulting mit Bilal
+/sprachschule/           SprachWerk Sprachschule
+/sprachschule/dachwerk/blog.html     Zentraler SAP Blog (DACHWERK + Fabio Witt)
+
+Das Paket kann als Ganzes auf einem Static Host deployed werden.
+Alle Bereiche sind über relative Links miteinander verbunden.
+
+/sprachlernapp/        Grammar Quest Sprachlernapp (7 Sprachen, Grammatik & Vokabeln)

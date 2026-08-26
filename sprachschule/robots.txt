@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://DOMAIN-BEISPIEL.DE/sitemap.xml

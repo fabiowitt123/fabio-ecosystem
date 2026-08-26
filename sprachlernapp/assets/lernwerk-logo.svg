@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 96">
+<defs>
+  <linearGradient id="g" x1="0" x2="1"><stop stop-color="#12375f"/><stop offset="1" stop-color="#2a9d8f"/></linearGradient>
+</defs>
+<rect x="6" y="9" width="76" height="76" rx="20" fill="url(#g)"/>
+<path d="M24 59V34l20-10 20 10v25L44 70z" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
+<path d="M31 42h26M31 50h18" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+<circle cx="58" cy="59" r="8" fill="#7ee0c9"/><path d="M58 55v8M54 59h8" stroke="#12375f" stroke-width="2.5" stroke-linecap="round"/>
+<text x="101" y="48" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="800" fill="#12375f">LERNWERK</text>
+<text x="103" y="70" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="2.5" fill="#6f8496">SPRACHEN · LERNEN · MEISTERN</text>
+</svg>

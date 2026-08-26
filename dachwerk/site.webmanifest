@@ -1,0 +1,17 @@
+{
+  "name": "DACHWERK SAP Consulting",
+  "short_name": "DACHWERK",
+  "description": "Persönlich geführte SAP-Beratung für PP, PP/DS, PEO, MM, Supply Chain und SAP Business One im DACH-Mittelstand.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071a2b",
+  "theme_color": "#071a2b",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

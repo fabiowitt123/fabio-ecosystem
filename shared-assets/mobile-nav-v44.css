@@ -1,0 +1,55 @@
+/* Fabio Ecosystem v44: shared mobile navigation + responsive hardening */
+html{scroll-padding-top:88px}
+body{overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto}
+button,a,input,select,textarea{touch-action:manipulation}
+.v44-nav-backdrop{position:fixed;inset:0;background:rgba(7,25,43,.38);backdrop-filter:blur(2px);opacity:0;pointer-events:none;transition:opacity .2s ease;z-index:2890}
+.v44-nav-backdrop.is-visible{opacity:1;pointer-events:auto}
+body.v44-mobile-nav-open{overflow:hidden}
+
+@media(max-width:980px){
+  .site-header,.v38-header,.v41-header,.blog-header-clean{isolation:isolate}
+  .nav-wrap,.v38-navwrap,.v41-nav,.blog-clean-nav{position:relative!important}
+  .nav-toggle,.v38-toggle,.v41-menu-button,.menu-toggle,.blog-menu-btn{
+    min-width:44px!important;min-height:44px!important;flex:0 0 44px!important;
+    position:relative!important;z-index:3010!important;-webkit-tap-highlight-color:transparent;
+  }
+  .nav-toggle:focus-visible,.v38-toggle:focus-visible,.v41-menu-button:focus-visible,.menu-toggle:focus-visible,.blog-menu-btn:focus-visible{
+    outline:3px solid rgba(45,158,143,.35)!important;outline-offset:2px!important;
+  }
+  .main-nav.is-open,.main-nav.open,
+  .v38-menu.is-open,.v38-menu.open,
+  .v41-menu.is-open,.v41-menu.open,
+  .primary-nav.is-open,.primary-nav.open,
+  .blog-main-nav.is-open,.blog-main-nav.open{
+    display:flex!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;
+    transform:none!important;z-index:3005!important;
+  }
+  .main-nav,.v38-menu,.v41-menu,.primary-nav,.blog-main-nav{
+    overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+  }
+  .main-nav>a,.v38-menu>a,.v41-menu>a,.primary-nav>a,.blog-main-nav>a{
+    min-height:44px!important;display:flex;align-items:center;
+  }
+  .nav-toggle.is-active span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+  .nav-toggle.is-active span:nth-child(2){opacity:0}
+  .nav-toggle.is-active span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+  .v38-toggle.is-active,.v41-menu-button.is-active,.blog-menu-btn.is-active{background:#eef4f7!important}
+
+  /* Prevent common mobile overflow problems across all brands. */
+  .container,.wrap,.v41-shell,.v38-navwrap,.blog-topic-inner-v38{max-width:100%!important}
+  table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  pre,code{max-width:100%;overflow-wrap:anywhere}
+  input,select,textarea{max-width:100%;font-size:16px!important}
+  dialog{max-width:calc(100vw - 24px)!important;max-height:calc(100dvh - 24px)!important}
+}
+
+@media(max-width:640px){
+  html{scroll-padding-top:74px}
+  .container,.wrap,.v41-shell{width:min(100% - 24px,1180px)!important}
+  .v41-nav,.v38-navwrap{width:calc(100% - 24px)!important}
+  h1{overflow-wrap:anywhere}
+  .button,.btn,.app-btn,.v41-btn,.cta-primary,.cta-secondary{min-height:44px}
+  .context-cta .cta-actions>a,.page-final-cta__inner>a{width:100%;justify-content:center;text-align:center}
+  .cv-download-actions>a{flex:1 1 100%;justify-content:center;text-align:center}
+}

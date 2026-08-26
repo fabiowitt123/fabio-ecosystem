@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html lang="de"><head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Fabio Witt | SAP S/4HANA Supply Chain &amp; Manufacturing Consultant</title>
+<meta content="Persönliche SAP-Beratung für S/4HANA Supply Chain, SAP PP, MM, Public Cloud, Signavio, Cloud ALM und Integrated Toolchain." name="description"/>
+<link href="styles.css" rel="stylesheet"/><link href="assets/logo.svg" rel="icon"/>
+<meta content="Fabio Witt | SAP S/4HANA Supply Chain &amp; Manufacturing Consultant" property="og:title"/><meta content="Persönliche SAP-Beratung für PP, MM, S/4HANA Cloud, Signavio, Cloud ALM und Integrated Toolchain." property="og:description"/><meta content="website" property="og:type"/><meta content="#0b2342" name="theme-color"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Fabio Witt","jobTitle":"Senior SAP S/4HANA Supply Chain Consultant","url":"https://www.linkedin.com/in/fabio-witt-8b889117a/","sameAs":["https://www.linkedin.com/in/fabio-witt-8b889117a/"],"knowsAbout":["SAP S/4HANA","SAP PP","SAP Production Planning","SAP MM","SAP Procurement","MRP","DDMRP","SAP Signavio","SAP Cloud ALM","SAP Activate","SAP BTP","SAP LeanIX","Business Process Design","Business Process Management","S/4HANA Public Cloud","S/4HANA Private Cloud","Supply Chain","Manufacturing","3PL"]}</script><style>
+/* ===== Unified DACHWERK Navbar ===== */
+.site-header{
+  position:sticky;top:0;z-index:1000;
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(13,35,66,.10);
+}
+.site-header .nav-wrap{
+  width:min(1180px,calc(100% - 36px));
+  margin:auto;height:76px;display:flex;align-items:center;
+  justify-content:space-between;gap:24px;
+}
+.site-header .brand{display:flex;align-items:center;flex:0 0 auto}
+.site-header .brand img{display:block;width:220px;max-height:48px;object-fit:contain}
+.site-header .main-nav{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:700}
+.site-header .main-nav a{color:#17324d;text-decoration:none;white-space:nowrap}
+.site-header .main-nav a:hover{color:#149a72}
+.site-header .nav-cta{
+  background:#149a72;color:#fff!important;padding:11px 15px;
+  border-radius:9px;box-shadow:0 8px 20px rgba(20,154,114,.20)
+}
+.site-header .nav-toggle{
+  display:none;background:transparent;border:0;padding:8px;cursor:pointer
+}
+.site-header .nav-toggle span{
+  display:block;width:24px;height:2px;background:#17324d;margin:5px 0
+}
+@media(max-width:980px){
+  .site-header .nav-toggle{display:block}
+  .site-header .main-nav{
+    display:none;position:absolute;left:0;right:0;top:76px;
+    background:#fff;border-bottom:1px solid rgba(13,35,66,.10);
+    box-shadow:0 18px 45px rgba(13,35,66,.10);
+    padding:18px;flex-direction:column;align-items:flex-start;gap:14px
+  }
+  .site-header .main-nav.is-open{display:flex}
+  .site-header .nav-wrap{position:relative}
+}
+@media(max-width:620px){
+  .site-header .brand img{width:185px}
+}
+</style>
+<style>
+.site-header .brand img{width:245px!important;max-height:50px!important;object-fit:contain}
+@media(max-width:620px){.site-header .brand img{width:205px!important}}
+</style>
+
+<style>
+.flag-icon{display:inline-block!important;width:24px!important;height:16px!important;object-fit:cover!important;vertical-align:-3px!important;border-radius:2px!important;box-shadow:0 0 0 1px rgba(13,35,66,.13)!important;margin:0 3px!important}
+.flag-card-img{display:block!important;width:34px!important;height:23px!important;object-fit:cover!important;border-radius:3px!important;box-shadow:0 0 0 1px rgba(13,35,66,.12)!important}
+.flag-course-icon{padding:0!important;overflow:hidden!important;background:#fff!important}
+.flag-course-icon .flag-card-img{width:48px!important;height:48px!important;object-fit:cover!important;border-radius:12px!important}
+.flag-badge-real{height:42px;display:flex;align-items:center}
+.flag-badge-real .flag-icon{width:48px!important;height:32px!important;border-radius:4px!important;margin:0!important}
+.teacher-language-pills .flag-icon{width:25px!important;height:17px!important}
+.flag-ribbon .flag-icon{width:48px!important;height:32px!important;border-radius:4px!important;margin:0!important}
+.language-blog-hero .flag-icon{width:42px!important;height:28px!important;margin:0 5px!important}
+</style>
+<style>
+/* ===== v29 shared responsive navbar ===== */
+.site-header{position:sticky;top:0;z-index:1200;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,55,95,.08)}
+.nav-wrap{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;min-width:0}
+.brand img{display:block;max-height:46px;width:auto;max-width:220px}
+.main-nav{display:flex;align-items:center;gap:8px;flex-wrap:nowrap}
+.main-nav>a{display:inline-flex;align-items:center;justify-content:center;padding:9px 11px;border-radius:9px;text-decoration:none;white-space:nowrap;font-size:13px;font-weight:800}
+.main-nav>a:hover{background:#f2f6f8}
+.nav-cta{background:#14375f!important;color:#fff!important}
+.nav-toggle{display:none;border:1px solid #dce6ec;background:#fff;border-radius:10px;width:42px;height:42px;align-items:center;justify-content:center;cursor:pointer}
+.nav-toggle span,.nav-toggle:before,.nav-toggle:after{content:"";display:block;width:19px;height:2px;background:#14375f;border-radius:2px;transition:.2s}
+.nav-toggle span{margin:4px 0}
+@media(max-width:980px){
+  .nav-wrap{position:relative}
+  .nav-toggle{display:flex;flex-direction:column;flex:0 0 auto}
+  .main-nav{display:none;position:absolute;left:0;right:0;top:calc(100% + 1px);padding:12px;background:#fff;border:1px solid #dce6ec;border-radius:0 0 16px 16px;box-shadow:0 18px 38px rgba(20,55,95,.12);flex-direction:column;align-items:stretch;gap:5px}
+  .main-nav.is-open{display:flex}
+  .main-nav>a{justify-content:flex-start;width:100%;padding:12px 13px}
+  .nav-cta{justify-content:center!important;margin-top:4px}
+  .brand img{max-width:185px;max-height:42px}
+}
+@media(max-width:520px){
+  .nav-wrap{min-height:64px}
+  .brand img{max-width:155px;max-height:38px}
+}
+</style><style>
+/* ===== v32 contextual CTA + donation ===== */
+.context-cta{margin:36px auto;padding:28px;border-radius:22px;background:linear-gradient(135deg,#0d3158,#247c82);color:#fff;display:flex;justify-content:space-between;gap:22px;align-items:center;box-shadow:0 18px 48px rgba(20,55,95,.12)}
+.context-cta h2{margin:5px 0;font-size:30px;color:#fff}.context-cta p{margin:0;color:#dcebf1;max-width:720px}.context-cta .cta-actions{display:flex;gap:9px;flex-wrap:wrap}
+.context-cta .cta-primary,.donation-box .donate-btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:900;border:0;cursor:pointer}
+.context-cta .cta-primary{background:#fff;color:#14375f}.context-cta .cta-secondary{display:inline-flex;align-items:center;padding:12px 16px;border:1px solid #ffffff55;border-radius:10px;color:#fff;text-decoration:none;font-weight:850}
+.donation-box{margin:30px auto 0;padding:22px;border-radius:18px;border:1px solid #dce6ec;background:#fff;display:flex;justify-content:space-between;gap:18px;align-items:center}
+.donation-box h3{margin:0 0 5px;color:#14375f}.donation-box p{margin:0;color:#647a8e;font-size:12px;max-width:720px}
+.donation-box .donate-btn{background:#1776bd;color:#fff}.donation-box small{display:block;margin-top:7px;color:#8a9aa7;font-size:9px}
+@media(max-width:760px){.context-cta,.donation-box{display:block}.context-cta .cta-actions{margin-top:15px}.donation-box .donate-btn{margin-top:14px;width:100%}}
+</style><style>/* v34 final CTA */.page-final-cta{margin:32px auto;padding:0 16px}.page-final-cta__inner{width:min(1180px,100%);margin:auto;padding:26px;border-radius:20px;background:linear-gradient(135deg,#0d3158,#247c82);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:20px}.page-final-cta__inner span{font-size:9px;font-weight:900;letter-spacing:.12em;color:#8ee4d0}.page-final-cta__inner h2{margin:6px 0;color:#fff;font-size:28px}.page-final-cta__inner p{margin:0;color:#dcebf1;max-width:720px}.page-final-cta__inner>a{flex:0 0 auto;padding:12px 15px;border-radius:10px;background:#fff;color:#14375f;text-decoration:none;font-weight:900}@media(max-width:720px){.page-final-cta__inner{display:block}.page-final-cta__inner>a{display:inline-flex;margin-top:14px}}</style><style>
+/* ===== v35 Fabio project form ===== */
+.fabio-project-form{width:min(1180px,calc(100% - 32px));margin:60px auto 28px;padding:28px;border:1px solid #dce6ec;border-radius:22px;background:#fff;box-shadow:0 18px 45px rgba(20,55,95,.07)}
+.fabio-form-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:start}.fabio-project-form span{font-size:10px;font-weight:900;letter-spacing:.12em;color:#2a9d8f}.fabio-project-form h2{font-size:34px;color:#14375f;margin:8px 0}.fabio-project-form p{color:#647a8e;line-height:1.6}
+.fabio-project-form form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fabio-project-form label{display:grid;gap:6px;color:#526b80;font-size:11px;font-weight:800}.fabio-project-form label:last-of-type{grid-column:1/-1}.fabio-project-form input,.fabio-project-form textarea{padding:11px;border:1px solid #bdced8;border-radius:9px;font:inherit}.fabio-project-form button{grid-column:1/-1;padding:12px;border:0;border-radius:9px;background:#14375f;color:#fff;font-weight:900;cursor:pointer}
+@media(max-width:800px){.fabio-form-grid{grid-template-columns:1fr}.fabio-project-form form{grid-template-columns:1fr}.fabio-project-form label:last-of-type,.fabio-project-form button{grid-column:auto}}
+</style><style>.webseiten-showcase{padding:60px 16px;background:#f4f8fb}.webseiten-showcase-inner{width:min(1180px,100%);margin:auto}.webseiten-showcase span{font-size:10px;font-weight:900;letter-spacing:.12em;color:#2a9d8f}.webseiten-showcase h2{font-size:34px;color:#14375f;margin:7px 0}.webseiten-showcase p{color:#647a8e;max-width:760px}.webseiten-showcase img{display:block;width:100%;margin-top:22px;border-radius:20px;box-shadow:0 20px 55px #14375f22}</style><style>/* v37 shared quality */html{scroll-behavior:smooth}body{overflow-x:hidden}img,svg,video{max-width:100%}input,select,textarea,button{box-sizing:border-box}@media(max-width:980px){.main-nav{max-height:calc(100vh - 70px);overflow:auto}}</style><style>/* v40 CV download */.cv-download{padding:54px 0;background:#f4f8fb}.cv-download-card{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:28px;border:1px solid #dce6ec;border-radius:20px;background:#fff;box-shadow:0 14px 40px rgba(20,55,95,.07)}.cv-download-card h2{margin:6px 0;color:#14375f}.cv-download-card p{margin:0;color:#647a8e;max-width:680px}.cv-download-actions{display:flex;gap:10px;flex-wrap:wrap;flex:0 0 auto}@media(max-width:760px){.cv-download-card{display:block}.cv-download-actions{margin-top:18px}}</style><link rel="stylesheet" href="shared-assets/mobile-nav-v44.css">
+</head><body>
+
+
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Fabio Witt Startseite">
+      <img src="assets/logo.svg" alt="Fabio Witt">
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="Navigation öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="global-nav" aria-label="Hauptnavigation">
+      <a href="dachwerk/index.html">DACHWERK</a>
+      <a href="sprachschule/index.html">SPRACHWERK</a>
+      <a href="sprachlernapp/index.html">LERNWERK</a>
+      <a href="index.html">Fabio Witt</a><a href="downloads/Fabio-Witt-CV.pdf" target="_blank" rel="noopener">CV</a>
+      <a href="dachwerk/blog.html">Blog</a>
+      <a href="dachwerk/index.html#kontakt" class="nav-cta">Projektanfrage</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero"><div class="container hero-grid">
+<div>
+<span class="eyebrow"><img class="flag-icon" src="shared-assets/flags/ch.svg" alt="Schweiz"> SAP Beratung aus Zürich · DACH &amp; international</span>
+<h1>Senior SAP S/4HANA <span>Supply Chain Consultant.</span></h1>
+<p>Ich unterstütze Unternehmen bei SAP S/4HANA Transformationen in Supply Chain und Manufacturing – von Fit-to-Standard und Prozessdesign bis Testing, Cutover und stabiler Übergabe.</p>
+
+<div class="hero-proofline">
+  <span><img class="flag-icon" src="shared-assets/flags/ch.svg" alt="Schweiz"> Zürich</span>
+  <span><img class="flag-icon" src="shared-assets/flags/de.svg" alt="Deutschland"> DACH-Projekte</span>
+  <span>☁️ S/4HANA Cloud</span>
+  <span>⚙️ PP & MM</span>
+  <span>🧭 Signavio & Cloud ALM</span>
+</div>
+<div class="hero-actions"><a class="btn btn-primary" href="#kontakt">Projekt in 30 Minuten besprechen</a><a class="btn btn-secondary" href="#leistungen">Kompetenzen ansehen</a><a class="btn btn-secondary" href="https://www.linkedin.com/in/fabio-witt-8b889117a/" rel="noopener" target="_blank">LinkedIn-Profil ↗</a><a class="btn btn-secondary" href="downloads/Fabio-Witt-CV.pdf" target="_blank" rel="noopener">CV herunterladen ↓</a></div>
+<div class="availability-pill"><span class="availability-dot"></span><strong>Projektbasierte Mandate</strong><span>· DACH / Remote · nach Vereinbarung</span></div></div>
+<article class="hero-card"><img alt="Fabio Witt" src="assets/fabio-witt.jpg"/><div class="hero-card-body"><h3>Fabio Witt</h3><div class="role">Senior SAP S/4HANA Supply Chain Consultant</div><div class="badges"><span class="badge">SAP PP</span><span class="badge">SAP MM</span><span class="badge">Public Cloud</span><span class="badge">Signavio</span><span class="badge">Cloud ALM</span><span class="badge">SAP Activate</span></div></div></article>
+</div></section>
+<div class="trust"><div class="container trustbox">
+<div class="metric"><strong>M.Sc.</strong><span>Wirtschaftsinformatik</span></div>
+<div class="metric"><strong>PP + MM</strong><span>Manufacturing &amp; Procurement</span></div>
+<div class="metric"><strong>Cloud</strong><span>Public &amp; Private Edition</span></div>
+<div class="metric"><strong>37</strong><span>SAP-/Tech-Zertifizierungen</span></div>
+</div></div>
+
+<section class="signature-section" id="unique">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Mein Profil</span>
+      <h2>Eine ungewöhnlich breite Kombination aus SAP, ERP, Manufacturing und Transformation</h2>
+      <p>Meine Erfahrung reicht von direkter Arbeit in der Produktion über Microsoft Dynamics NAV / Business Central bis zu internationalen SAP S/4HANA Transformationsprojekten in der Schweiz.</p>
+    </div>
+    <div class="signature-grid">
+      <article class="signature-card">
+        <span class="signature-number">01</span>
+        <h3>Shopfloor-Verständnis</h3>
+        <p>Frühe praktische Erfahrung in der Produktion. Dadurch betrachte ich SAP-Prozesse nicht nur aus Systemperspektive, sondern auch aus Sicht realer Abläufe.</p>
+      </article>
+      <article class="signature-card">
+        <span class="signature-number">02</span>
+        <h3>Mehr als ein ERP-System</h3>
+        <p>Drei Jahre Microsoft Dynamics NAV / Business Central im Automotive-Umfeld – Entwicklung, Rollout, Third-Level Support und DACH-Projekte.</p>
+      </article>
+      <article class="signature-card">
+        <span class="signature-number">03</span>
+        <h3>S/4HANA Supply Chain</h3>
+        <p>Praxis in SAP PP, MM, 3PL, Inventory Management, MRP/DDMRP, Testing, Defect Management und Functional Specification Design.</p>
+      </article>
+      <article class="signature-card">
+        <span class="signature-number">04</span>
+        <h3>Transformation & Toolchain</h3>
+        <p>Signavio, SAP Cloud ALM, LeanIX, SAP Activate, BTP und Integrated Toolchain – von Prozessdesign bis Umsetzung und Qualitätssicherung.</p>
+      </article>
+      <article class="signature-card">
+        <span class="signature-number">05</span>
+        <h3>Industriebreite</h3>
+        <p>Projektkontext in Electrification, Semiconductor, Construction Materials, Swiss Watch und Automotive.</p>
+      </article>
+      <article class="signature-card">
+        <span class="signature-number">06</span>
+        <h3>Multilingual</h3>
+        <p>Sieben Sprachen ermöglichen sichere Kommunikation in internationalen Projektteams und im DACH-Umfeld.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<section id="leistungen"><div class="container">
+<div class="section-head"><span class="kicker">SAP Expertise</span><h2>Fokus auf Supply Chain, Manufacturing und Transformation</h2><p>Keine anonyme Großberatung: fachliche Verantwortung, direkte Kommunikation und pragmatische Umsetzung aus einer Hand.</p></div>
+<div class="grid3">
+<article class="service"><div class="icon">PP</div><h3>SAP PP &amp; Manufacturing</h3><p>Produktionsplanung und Manufacturing-Prozesse in S/4HANA.</p><ul><li>MRP und Produktionsplanung</li><li>Stammdaten &amp; Fertigungsversionen</li><li>Produktionsaufträge &amp; Goods Movements</li><li>Fit-to-Standard &amp; Testing</li></ul></article>
+<article class="service"><div class="icon">MM</div><h3>SAP MM &amp; Procurement</h3><p>Beschaffung, Bestände und integrierte Supply-Chain-Prozesse.</p><ul><li>Sourcing &amp; Procurement</li><li>Inventory Management</li><li>3PL / Third-Party Logistics</li><li>SIT, UAT &amp; Defect Management</li></ul></article>
+<article class="service"><div class="icon">☁</div><h3>S/4HANA Cloud</h3><p>Transformation mit Fit-to-Standard und sauberer Governance.</p><ul><li>S/4HANA Public Cloud</li><li>S/4HANA Private Edition</li><li>RISE-Transformation</li><li>Clean-Core-orientiertes Design</li></ul></article>
+<article class="service"><div class="icon">S</div><h3>SAP Signavio</h3><p>Prozessaufnahme, Zielprozesse und Transformation verständlich modellieren.</p><ul><li>Business Process Modeling</li><li>L3-Prozessdesign</li><li>Fit-to-Standard Workshops</li><li>Governance &amp; Konventionen</li></ul></article>
+<article class="service"><div class="icon">ALM</div><h3>SAP Cloud ALM</h3><p>Requirements, Testing, Defects und Projektfortschritt integriert steuern.</p><ul><li>Implementation Management</li><li>Test- &amp; Defect-Steuerung</li><li>Quality Gates</li><li>Integrated Toolchain</li></ul></article>
+<article class="service"><div class="icon">A</div><h3>SAP Activate</h3><p>Strukturierter Projektansatz von Discover bis Run.</p><ul><li>Fit-to-Standard</li><li>Agiles Delivery-Modell</li><li>Cutover &amp; Hypercare</li><li>Projekt- und Stream-Steuerung</li></ul></article>
+</div></div></section><section class="best-practices-section" id="best-practices"><div class="container">
+<div class="section-head"><span class="kicker">SAP Best Practices</span><h2>Struktur vor Customizing. Qualität vor Geschwindigkeit.</h2><p>Mein Projektansatz orientiert sich an bewährten Prinzipien, die S/4HANA-Lösungen wartbarer, testbarer und langfristig upgradefähig machen.</p></div>
+<div class="best-grid">
+<article class="best-card"><span>01</span><h3>Fit-to-Standard first</h3><p>Zuerst den SAP-Standard verstehen und fachlich bewerten. Abweichungen werden nur dort geschaffen, wo ein echter Business Need besteht.</p></article>
+<article class="best-card"><span>02</span><h3>Clean Core denken</h3><p>Erweiterungen bewusst klassifizieren, released APIs bevorzugen und technische Schulden sichtbar machen.</p></article>
+<article class="best-card"><span>03</span><h3>Process Ownership</h3><p>Jeder End-to-End-Prozess braucht fachliche Owner, klare Entscheidungen und nachvollziehbare Governance.</p></article>
+<article class="best-card"><span>04</span><h3>Traceability</h3><p>Vom Prozess über Requirement und Lösung bis Test und Defect bleibt nachvollziehbar, warum etwas umgesetzt wurde.</p></article>
+<article class="best-card"><span>05</span><h3>Quality Gates</h3><p>Design, Build, SIT, UAT und Cutover erhalten definierte Eintritts- und Austrittskriterien statt subjektiver Statusmeldungen.</p></article>
+<article class="best-card"><span>06</span><h3>Knowledge Transfer</h3><p>Dokumentation und Enablement laufen parallel zur Umsetzung, damit Wissen nach dem Go-live im Unternehmen bleibt.</p></article>
+</div>
+<div class="principles-band"><strong>Integrated Toolchain:</strong><span>SAP Signavio</span><b>→</b><span>Requirements</span><b>→</b><span>SAP Cloud ALM</span><b>→</b><span>Build</span><b>→</b><span>SIT / UAT</span><b>→</b><span>Cutover</span><b>→</b><span>Hypercare</span></div>
+</div></section>
+<section class="alt" id="profil"><div class="container">
+<div class="section-head"><span class="kicker">Profil &amp; Projekterfahrung</span><h2>Supply Chain, Manufacturing und Transformation aus der Praxis</h2><p>Meine Erfahrung verbindet SAP S/4HANA Implementierungen, Prozessdesign, Testing, Toolchain-Steuerung und internationale Projektarbeit im DACH-Umfeld.</p></div>
+<div class="split" style="align-items:start">
+<div>
+<div class="feature-list">
+<div class="feature"><span class="check">✓</span><div><strong>Aktueller Fokus</strong><br/><span>SAP Supply Chain Operations Transformation mit PP, MM, Signavio, Cloud ALM, Public Cloud, LeanIX und Integrated Toolchain.</span></div></div>
+<div class="feature"><span class="check">✓</span><div><strong>Industrien</strong><br/><span>Erfahrung u. a. in Electrification, Semiconductor, Construction Materials, Swiss Watch und Automotive.</span></div></div>
+<div class="feature"><span class="check">✓</span><div><strong>Projektarbeit</strong><br/><span>Fit-to-Standard Workshops, Show-&amp;-Tell, UAT/SIT, Defect Management, Functional Specifications, Change Requests, RICEFW und Rollen-/Berechtigungsthemen.</span></div></div>
+<div class="feature"><span class="check">✓</span><div><strong>3PL &amp; Inventory</strong><br/><span>Third-Party Logistics, Inventory Management und integrierte Beschaffungs-/Bestandsprozesse im S/4HANA-Kontext.</span></div></div>
+</div>
+</div>
+<div class="service" style="padding:36px">
+<span class="kicker">Kurzprofil</span>
+<h3 style="font-size:30px">Fabio Witt</h3>
+<p><strong>M.Sc. Wirtschaftsinformatik</strong> und Senior SAP S/4HANA Supply Chain Consultant mit Schwerpunkt Manufacturing, Procurement und Business Transformation.</p>
+<div class="badges">
+<span class="badge">SAP PP</span><span class="badge">SAP MM</span><span class="badge">3PL</span><span class="badge">Public Cloud</span><span class="badge">Signavio</span><span class="badge">Cloud ALM</span><span class="badge">LeanIX</span><span class="badge">BTP</span>
+</div>
+<p style="margin-top:18px"><strong>Sprachen:</strong> Deutsch C2, Englisch C1, Französisch B2, Spanisch B2, Italienisch B2, Russisch B2, Portugiesisch B1.</p>
+<a class="btn btn-secondary" href="https://www.linkedin.com/in/fabio-witt-8b889117a/" rel="noopener" target="_blank">LinkedIn-Profil ansehen ↗</a>
+</div>
+</div>
+</div></section>
+<section class="alt map-section" id="einsatzgebiet"><div class="container">
+<div class="section-head"><span class="kicker">Einsatzgebiet</span><h2>In Zürich zuhause. Im DACH-Raum projektorientiert einsetzbar.</h2><p>Persönliche Zusammenarbeit vor Ort oder remote – abhängig von Projektphase, Workshopbedarf und Kundenmodell.</p></div>
+<div class="map-layout">
+<div class="map-card"><img alt="Karte des DACH-Raums mit Deutschland, Österreich, Schweiz und Basis Zürich" src="assets/dach-map-v4.svg"/><div class="map-legend"><span><i class="legend-dot legend-base"></i>Basis Zürich</span><span><i class="legend-dot legend-dach"></i>DACH-Fokus</span></div></div>
+<div class="map-copy">
+<div class="map-stat"><strong>Basis Zürich</strong><span>Persönlicher Ausgangspunkt für DACH-Projekte und internationale Zusammenarbeit.</span></div>
+<div class="map-stat"><strong><img class="flag-icon" src="shared-assets/flags/de.svg" alt="Deutschland"> <img class="flag-icon" src="shared-assets/flags/at.svg" alt="Österreich"> <img class="flag-icon" src="shared-assets/flags/ch.svg" alt="Schweiz"> DACH</strong><span>Deutschsprachige Workshops und Stakeholder-Kommunikation</span></div>
+<div class="map-stat"><strong><img class="flag-icon" src="shared-assets/flags/gb.svg" alt="Vereinigtes Königreich"> Englisch</strong><span>Internationale Projektteams und Delivery</span></div>
+<div class="map-stat"><strong>Hybrid</strong><span>On-site für Workshops, Fit-to-Standard und kritische Phasen; remote für fokussierte Delivery</span></div>
+<div class="map-note">Einsatz und Reiseumfang werden projektbezogen vereinbart. Die Karte stellt den Beratungsfokus dar und keine Unternehmensstandorte.</div>
+</div>
+</div>
+</div></section><section><div class="container">
+<div class="section-head"><span class="kicker">Branchen &amp; Themen</span><h2>Erfahrung in unterschiedlichen industriellen SAP-Szenarien</h2><p>Die Projekte reichen von Produktionsplanung und Procurement bis zu Business Process Management und Integrated Toolchain.</p></div>
+<div class="grid3">
+<article class="service"><div class="icon">⚙</div><h3>Semiconductor</h3><p>S/4HANA DDR / Demand-Driven Replenishment, Production Planning, Level-3 Support und Change Request Management.</p></article>
+<article class="service"><div class="icon">🏗</div><h3>Construction Materials</h3><p>SCM mit MM/TM, Fit-to-Standard Workshops, RICEFW, Signavio L3-Prozessmodelle, UAT und Rollen/Berechtigungen.</p></article>
+<article class="service"><div class="icon">⌚</div><h3>Swiss Watch Industry</h3><p>S/4HANA Business Process Modeling und Business Process Management mit SAP Signavio.</p></article>
+<article class="service"><div class="icon">🚗</div><h3>Automotive</h3><p>ERP- und IT-Erfahrung aus Automotive-Umfeld sowie DACH-Rollouts und Support.</p></article>
+<article class="service"><div class="icon">🔌</div><h3>Electrification</h3><p>S/4HANA Public Cloud, 3PL, Inventory Management, SIT/UAT, Defect Management und Cloud ALM.</p></article>
+<article class="service"><div class="icon">🧭</div><h3>Transformation &amp; Presales</h3><p>Unterstützung bei S/4HANA Transformationsprogrammen, RFP-/Proposal-Arbeit und strukturierter Projektvorbereitung.</p></article>
+</div>
+</div></section>
+<section class="alt"><div class="container split">
+<div>
+<div class="section-head"><span class="kicker">Ausbildung</span><h2>Business Informatics mit Fokus auf IT Consulting</h2><p>Technisches Verständnis, Prozessdenken und Projektmethodik bilden die Grundlage meiner SAP-Beratung.</p></div>
+<div class="feature-list">
+<div class="feature"><span class="check">M</span><div><strong>M.Sc. Wirtschaftsinformatik</strong><br/><span>FernUniversität in Hagen · 2023–2026 · u. a. Software Engineering, IT Governance, Leadership und Business/IT Alignment.</span></div></div>
+<div class="feature"><span class="check">B</span><div><strong>B.Sc. Wirtschaftsinformatik</strong><br/><span>FHDW · Spezialisierung IT Consulting · ERP Systems, Project Management, Data Technologies, IT Security und Business Process Management.</span></div></div>
+</div>
+</div>
+<div class="service" style="padding:36px">
+<span class="kicker">Zusätzliche Kompetenz</span><h3 style="font-size:28px">Von ERP bis BTP</h3>
+<p>Vor SAP habe ich mehrere Jahre mit Microsoft Dynamics NAV / Business Central gearbeitet. Das stärkt meinen Blick für ERP-Prozesse jenseits einzelner Produkte und hilft besonders bei Transformationen aus heterogenen Systemlandschaften.</p>
+<div class="badges"><span class="badge">Microsoft Dynamics NAV</span><span class="badge">Business Central</span><span class="badge">ERP</span><span class="badge">IT Consulting</span></div>
+</div>
+</div></section>
+<section class="engagement-section"><div class="container">
+<div class="section-head"><span class="kicker">Engagement-Modelle</span><h2>Flexibel dort unterstützen, wo im Projekt Kompetenz fehlt.</h2><p>Vom fokussierten Fachworkstream bis zur punktuellen Qualitätssicherung – die Rolle richtet sich nach Ihrem tatsächlichen Bedarf.</p></div>
+<div class="grid3">
+<article class="service"><div class="icon">WL</div><h3>Workstream Consulting</h3><p>Verantwortung für einen klar definierten fachlichen Scope, z. B. PP, MM, 3PL oder Toolchain.</p><ul><li>Workshops &amp; Design</li><li>Requirements &amp; Spezifikationen</li><li>Testing &amp; Defects</li><li>Stakeholder-Abstimmung</li></ul></article>
+<article class="service"><div class="icon">QA</div><h3>Project Assurance</h3><p>Unabhängiger fachlicher Blick auf Design, Teststrategie, Cutover-Reife und kritische Deliverables.</p><ul><li>Design Reviews</li><li>Quality Gates</li><li>Risk &amp; Issue Review</li><li>Go-live Readiness</li></ul></article>
+<article class="service"><div class="icon">EX</div><h3>Expert Support</h3><p>Zeitlich begrenzte Unterstützung für konkrete Herausforderungen oder Kapazitätsengpässe.</p><ul><li>Problem Analyse</li><li>Workshop Moderation</li><li>Backlog / Defect Support</li><li>Knowledge Transfer</li></ul></article>
+</div>
+<div class="deliverables"><h3>Typische Deliverables</h3><div class="deliverable-tags"><span>Fit-to-Standard Decision Log</span><span>Signavio L3 Process Flows</span><span>Functional Specifications</span><span>Requirement Backlog</span><span>SIT/UAT Test Cases</span><span>Defect Triage</span><span>Cutover Checklist</span><span>Hypercare Handover</span></div></div>
+</div></section>
+<section class="alt" id="projekte">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Ausgewählte Projekterfahrung</span>
+      <h2>Projektpraxis entlang der SAP Supply Chain</h2>
+      <p>Die folgenden Projekte und Aufgaben stammen aus meiner beruflichen Erfahrung und zeigen die Bandbreite von Manufacturing über Procurement bis Business Transformation.</p>
+    </div>
+
+    <div class="project-list">
+      <article class="project-card">
+        <div class="project-meta"><span><img class="flag-icon" src="shared-assets/flags/ch.svg" alt="Schweiz"> Schweiz</span><span>S/4HANA Public Cloud</span><span>Electrification</span></div>
+        <h3>SAP S/4HANA Public Cloud Implementation – Electrification Industry</h3>
+        <p><strong>Rolle:</strong> 3PL / Third-Party Logistics Stream Member</p>
+        <ul>
+          <li>Inventory Management</li>
+          <li>SIT und UAT Testing</li>
+          <li>Defect Management</li>
+          <li>Functional Specification Design</li>
+          <li>Change Request Management</li>
+          <li>Test Script Creation & Review</li>
+          <li>SAP Cloud ALM Management</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta"><span><img class="flag-icon" src="shared-assets/flags/ch.svg" alt="Schweiz"> Schweiz</span><span>S/4HANA</span><span>Semiconductor</span></div>
+        <h3>S/4HANA DDR / DDMRP Implementation – Semiconductor Industry</h3>
+        <p><strong>Rolle:</strong> Production Planning Stream Member</p>
+        <ul>
+          <li>Demand-Driven Replenishment / DDMRP</li>
+          <li>Level-3 Support</li>
+          <li>Change Request Management</li>
+          <li>Functional Specification Documents</li>
+          <li>Application Management Support</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta"><span><img class="flag-icon" src="shared-assets/flags/ch.svg" alt="Schweiz"> Schweiz</span><span>S/4HANA</span><span>Construction Materials</span></div>
+        <h3>S/4HANA Implementation – Construction Materials</h3>
+        <p><strong>Rolle:</strong> SCM Stream Member & Coordinator (MM + TM)</p>
+        <ul>
+          <li>Fit-to-Standard Workshops</li>
+          <li>Show & Tell Sessions mit Key Business Usern</li>
+          <li>RICEFW Management</li>
+          <li>Signavio L3 Business Process Flows</li>
+          <li>Roles & Authorizations mit GRC</li>
+          <li>Functional Design Documents</li>
+          <li>UAT Test Case Management & Execution</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta"><span><img class="flag-icon" src="shared-assets/flags/ch.svg" alt="Schweiz"> Schweiz</span><span>S/4HANA</span><span>Swiss Watch Industry</span></div>
+        <h3>S/4HANA Transformation – Swiss Watch Industry</h3>
+        <p><strong>Fokus:</strong> SAP Signavio Business Process Modeling & Business Process Management</p>
+        <ul>
+          <li>Business Process Modeling</li>
+          <li>Business Process Management</li>
+          <li>Prozessstrukturierung im Transformationskontext</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta"><span><img class="flag-icon" src="shared-assets/flags/de.svg" alt="Deutschland"> <img class="flag-icon" src="shared-assets/flags/at.svg" alt="Österreich"> <img class="flag-icon" src="shared-assets/flags/ch.svg" alt="Schweiz"></span><span>Microsoft Dynamics NAV</span><span>Automotive</span></div>
+        <h3>ERP Development, Rollout & Support – Automotive / Tire Retail</h3>
+        <p><strong>Rolle:</strong> Dual Student Microsoft Dynamics NAV / Business Central</p>
+        <ul>
+          <li>Development und Rollout neuer ERP-Funktionalitäten</li>
+          <li>Third-Level Support für Händler in <img class="flag-icon" src="shared-assets/flags/de.svg" alt="Deutschland"> Deutschland, <img class="flag-icon" src="shared-assets/flags/at.svg" alt="Österreich"> Österreich und <img class="flag-icon" src="shared-assets/flags/ch.svg" alt="Schweiz"> Schweiz</li>
+          <li>Internationale Projekte im DACH-Raum</li>
+          <li>Core Product & Core Development Specialist in Business Central</li>
+        </ul>
+      </article>
+
+      <article class="project-card project-card--highlight">
+        <div class="project-meta"><span><img class="flag-icon" src="shared-assets/flags/ch.svg" alt="Schweiz"> Schweiz</span><span>Transformation</span><span>Presales</span></div>
+        <h3>S/4HANA Business Transformation & RFP Support</h3>
+        <p>Unterstützung bei Proposal Decks und groß angelegten S/4HANA Transformationsprogrammen für Schweizer Kunden.</p>
+        <ul>
+          <li>RFP / Proposal Support</li>
+          <li>Business Transformation Positioning</li>
+          <li>Integrated Toolchain Perspektive</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+<section id="vorgehen"><div class="container"><div class="section-head"><span class="kicker">Zusammenarbeit</span><h2>Vom Problem zur belastbaren Lösung</h2><p>Ein schlanker Beratungsansatz mit klaren Ergebnissen und nachvollziehbarer Verantwortung.</p></div>
+<div class="split"><div class="timeline">
+<div class="step"><div class="stepnum">01</div><div><h3>Scope &amp; Zielbild</h3><p>Ausgangslage, Pain Points, Projektziele und Abnahmekriterien sauber festlegen.</p></div></div>
+<div class="step"><div class="stepnum">02</div><div><h3>Fit-to-Standard</h3><p>Prozesse in Signavio strukturieren, Standard bewerten und echte Gaps identifizieren.</p></div></div>
+<div class="step"><div class="stepnum">03</div><div><h3>Realize &amp; Test</h3><p>Konfiguration, Spezifikationen, SIT/UAT, Defects und Qualität eng verzahnen.</p></div></div>
+<div class="step"><div class="stepnum">04</div><div><h3>Deploy &amp; Stabilisieren</h3><p>Cutover vorbereiten, Go-live absichern und Wissen in die Organisation übergeben.</p></div></div>
+</div>
+<div class="service" style="padding:36px"><span class="kicker">Geeignet für</span><h3>Unternehmen, die...</h3><ul><li>S/4HANA neu implementieren oder transformieren</li><li>PP-/MM-Prozesse stabilisieren möchten</li><li>Public-Cloud-Fit-to-Standard brauchen</li><li>Signavio und Cloud ALM sinnvoll verbinden wollen</li><li>Test- und Cutover-Steuerung professionalisieren möchten</li><li>einen erfahrenen SAP-Workstream-Consultant benötigen</li></ul></div>
+</div></div></section>
+<section class="alt project-situations"><div class="container">
+<div class="section-head"><span class="kicker">Projektpraxis</span><h2>Typische Situationen, in denen ich Mehrwert liefere</h2><p>Keine anonymisierten Fake-Referenzen, sondern konkrete Arten von Aufgaben, die sich aus meiner bisherigen Projekterfahrung ableiten.</p></div>
+<div class="project-grid">
+<article><span class="project-type">Public Cloud / 3PL</span><h3>Inventory &amp; Third-Party Logistics</h3><p>SIT/UAT, Defect Management, Functional Specification Design, Change Requests, Test Scripts und Cloud-ALM-Steuerung.</p></article>
+<article><span class="project-type">Manufacturing</span><h3>Production Planning &amp; DDR</h3><p>PP-Workstream-Unterstützung, Demand-Driven Replenishment, Change Requests und Level-3-Support.</p></article>
+<article><span class="project-type">SCM / MM / TM</span><h3>Fit-to-Standard &amp; Process Design</h3><p>Workshops, RICEFW-Steuerung, L3-Prozessmodelle, Rollen/Berechtigungen und UAT-Unterstützung.</p></article>
+<article><span class="project-type">Business Transformation</span><h3>Signavio &amp; Integrated Toolchain</h3><p>Business Process Modeling sowie Verbindung von Prozessdesign, Requirements, Cloud ALM und Teststeuerung.</p></article>
+</div>
+</div></section><section id="skills"><div class="container">
+<div class="section-head"><span class="kicker">Kompetenzprofil</span><h2>Fachlich tief in Supply Chain – breit in Transformation &amp; Toolchain</h2><p>Ausgewählte Kompetenzen aus meinem LinkedIn-Profil und meinen Zertifizierungen. Der Schwerpunkt liegt bewusst auf den Themen, die für SAP-Projekte im Mittelstand und in industriellen Umfeldern relevant sind.</p></div>
+<div class="skills-groups">
+<article class="skill-group"><span class="skill-label">Core SAP</span><h3>Manufacturing &amp; Procurement</h3><div class="skill-cloud"><span>SAP PP</span><span>SAP Production Planning</span><span>SAP MM</span><span>SAP Procurement</span><span>MRP</span><span>DDMRP</span><span>SAP S/4HANA</span><span>Inventory Management</span><span>3PL</span></div></article>
+<article class="skill-group"><span class="skill-label">Transformation</span><h3>Process &amp; Implementation</h3><div class="skill-cloud"><span>SAP Implementation</span><span>Business Process Design</span><span>Business Process Management</span><span>Fit-to-Standard</span><span>SAP Activate</span><span>Business Transformation</span><span>Testing</span><span>Cutover</span></div></article>
+<article class="skill-group"><span class="skill-label">Toolchain</span><h3>Cloud, Architecture &amp; Governance</h3><div class="skill-cloud"><span>SAP Cloud ALM</span><span>SAP Signavio</span><span>SAP BTP</span><span>SAP LeanIX</span><span>Public Cloud</span><span>Private Cloud</span><span>Clean Core</span><span>Integrated Toolchain</span></div></article>
+<article class="skill-group"><span class="skill-label">ERP &amp; Technology</span><h3>Breiter Systemblick</h3><div class="skill-cloud"><span>Microsoft Business Central</span><span>Microsoft Dynamics NAV</span><span>IT Consulting</span><span>IT Strategy</span><span>IT Management</span><span>Python</span><span>C#</span><span>Java</span></div></article>
+</div>
+<div class="skills-proof"><div><strong>LinkedIn Skill Signals</strong><span>Mehrere Kernkompetenzen – darunter SAP PP, SAP MM, Signavio, Business Process Design und SAP Implementation – sind im Profil mit Erfahrungen, Zertifizierungen und Kolleg:innen-Endorsements verknüpft.</span></div><a class="btn btn-secondary" href="https://www.linkedin.com/in/fabio-witt-8b889117a/details/skills/" rel="noopener" target="_blank">Skills auf LinkedIn ansehen ↗</a></div>
+</div></section>
+<section id="sprachen">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Sprachen</span>
+      <h2>Sieben Sprachen für internationale Projektarbeit</h2>
+      <p>Besonders in internationalen SAP-Programmen erleichtert Mehrsprachigkeit Workshops, Abstimmungen und Stakeholder-Kommunikation.</p>
+    </div>
+    <div class="language-grid">
+      <div class="language-card"><span class="flag"><img class="flag-icon" src="shared-assets/flags/de.svg" alt="Deutschland"></span><div><strong>Deutsch</strong><span>C2</span></div></div>
+      <div class="language-card"><span class="flag"><img class="flag-icon" src="shared-assets/flags/gb.svg" alt="Vereinigtes Königreich"></span><div><strong>Englisch</strong><span>C1</span></div></div>
+      <div class="language-card"><span class="flag"><img class="flag-icon" src="shared-assets/flags/fr.svg" alt="Frankreich"></span><div><strong>Französisch</strong><span>B2 · DELF</span></div></div>
+      <div class="language-card"><span class="flag"><img class="flag-icon" src="shared-assets/flags/es.svg" alt="Spanien"></span><div><strong>Spanisch</strong><span>B2</span></div></div>
+      <div class="language-card"><span class="flag"><img class="flag-icon" src="shared-assets/flags/it.svg" alt="Italien"></span><div><strong>Italienisch</strong><span>B2</span></div></div>
+      <div class="language-card"><span class="flag"><img class="flag-icon" src="shared-assets/flags/ru.svg" alt="Russland"></span><div><strong>Russisch</strong><span>B2</span></div></div>
+      <div class="language-card"><span class="flag"><img class="flag-icon" src="shared-assets/flags/pt.svg" alt="Portugal"></span><div><strong>Portugiesisch</strong><span>B1</span></div></div>
+    </div>
+    <p class="micro-note">Die Flaggen dienen nur als visuelle Orientierung für die jeweilige Sprache.</p>
+  </div>
+</section>
+
+<section class="dark" id="zertifizierungen">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Zertifizierungen</span>
+      <h2>SAP-zertifiziert über Supply Chain, Cloud, Transformation und Architektur</h2>
+      <p>Auswahl meiner relevanten SAP- und Branchenzertifizierungen. Die Nachweise sind zusätzlich über mein LinkedIn-Profil einsehbar.</p>
+    </div>
+
+    <div class="cert-category">
+      <h3>Cloud, Architektur & Transformation</h3>
+      <div class="cert-grid">
+        <div class="cert"><strong>SAP Certified – Solution Architect – SAP BTP</strong><span>2026 · P_BTPA_2511</span></div>
+        <div class="cert"><strong>SAP Certified – Solution Transformation Consultant with SAP Cloud ALM</strong><span>2026 · C_STC</span></div>
+        <div class="cert"><strong>SAP Certified – Enterprise Architecture Consultant – SAP LeanIX</strong><span>2026 · C_LIXEA</span></div>
+        <div class="cert"><strong>SAP Certified Associate – Validating Business Transformation</strong><span>2026 · C_SIGVT</span></div>
+        <div class="cert"><strong>SAP Certified Associate – Business Transformation Consultant</strong><span>2025 · C_SIGBT</span></div>
+      </div>
+    </div>
+
+    <div class="cert-category">
+      <h3>Projektmanagement & SAP Activate</h3>
+      <div class="cert-grid">
+        <div class="cert"><strong>Managing SAP S/4HANA Cloud Public Edition Projects</strong><span>2026 · C_S4PM</span></div>
+        <div class="cert"><strong>Managing SAP S/4HANA Cloud Private Edition Projects</strong><span>2026 · C_S4PM2</span></div>
+        <div class="cert"><strong>SAP Certified Specialist – Project Manager – SAP Activate</strong><span>2025 · C_ACT_2403</span></div>
+        <div class="cert"><strong>SAP Activate for Agile Implementation Management</strong><span>2025 · E_ACTAI_2403</span></div>
+      </div>
+    </div>
+
+    <div class="cert-category">
+      <h3>S/4HANA Implementation & Supply Chain</h3>
+      <div class="cert-grid">
+        <div class="cert"><strong>SAP S/4HANA Cloud Public Edition – Implementation Consultant</strong><span>2025 · C_S4CPB</span></div>
+        <div class="cert"><strong>SAP S/4HANA Cloud Public Edition – Sourcing & Procurement</strong><span>2025 · C_S4CPR</span></div>
+        <div class="cert"><strong>SAP S/4HANA Cloud Public Edition – Sales</strong><span>2025 · C_S4CS</span></div>
+        <div class="cert"><strong>S/4HANA Cloud Private Edition – Implementation Consultant</strong><span>2025 · E_S4CPE</span></div>
+        <div class="cert"><strong>S/4HANA Cloud Private Edition – Production Planning & Manufacturing</strong><span>2024 · C_TS422</span></div>
+        <div class="cert"><strong>S/4HANA Cloud Private Edition – Sourcing & Procurement</strong><span>2024 · C_TS452</span></div>
+      </div>
+    </div>
+
+    <div class="cert-category">
+      <h3>Process Management & Branchen</h3>
+      <div class="cert-grid">
+        <div class="cert"><strong>SAP Signavio – Business Process Consultant</strong><span>2025 · C_SIGPM_2403</span></div>
+        <div class="cert"><strong>Global Industry Practitioner Level 2 – Automotive</strong><span>2025</span></div>
+        <div class="cert"><strong>Global Industry Practitioner Level 2 – Semiconductor</strong><span>2025</span></div>
+        <div class="cert"><strong>Global Industry Practitioner Level 2 – Software</strong><span>2025</span></div>
+        <div class="cert"><strong>Generative AI at SAP</strong><span>2024 · openSAP</span></div>
+      </div>
+    </div>
+
+    <div class="cert-category">
+      <h3>ERP Background</h3>
+      <div class="cert-grid">
+        <div class="cert"><strong>Certified Core Product Specialist in Business Central</strong><span>2022</span></div>
+        <div class="cert"><strong>Certified Core Development Specialist in Business Central</strong><span>2022</span></div>
+      </div>
+    </div>
+
+    <div style="margin-top:28px">
+      <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.linkedin.com/in/fabio-witt-8b889117a/">Zertifikate auf LinkedIn ansehen ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt"><div class="container">
+<div class="section-head"><span class="kicker">Zusammenarbeit</span><h2>Was Kollegen an der Zusammenarbeit hervorheben</h2><p>Auszüge aus veröffentlichten LinkedIn-Empfehlungen, sinngemäß zusammengefasst.</p></div>
+<div class="grid3">
+<article class="service"><h3>Klare Kommunikation</h3><p>Kollegen beschreiben meine Kommunikation als klar und sicher – besonders in multilingualen Projektumfeldern.</p></article>
+<article class="service"><h3>Struktur &amp; Verlässlichkeit</h3><p>Hervorgehoben werden strukturierte Arbeitsweise, Zuverlässigkeit und ein konsequenter Fokus auf definierte Ziele.</p></article>
+<article class="service"><h3>Manufacturing-Fachlichkeit</h3><p>Meine Stärke in SAP Manufacturing, Prozessoptimierung und der Umsetzung fachlicher Anforderungen wird besonders betont.</p></article>
+</div>
+</div></section>
+<section><div class="container"><div class="section-head"><span class="kicker">SAP Insights</span><h2>Praxiswissen statt Buzzwords</h2><p>Kurze Fachbeiträge zu typischen Fragen aus SAP-Implementierungs- und Transformationsprojekten.</p></div>
+<div class="blog-grid">
+<article class="post"><span class="tag">SAP PP</span><h3>MRP Live: worauf es im Projekt wirklich ankommt</h3><p>Dispositionsparameter, Ausnahmen und End-to-End-Tests pragmatisch betrachtet.</p></article>
+<article class="post"><span class="tag">Toolchain</span><h3>Signavio + Cloud ALM sinnvoll verbinden</h3><p>Wie Prozesse, Requirements, Tests und Defects in einer durchgängigen Projektlogik zusammenfinden.</p></article>
+<article class="post"><span class="tag">Public Cloud</span><h3>Fit-to-Standard ohne Workshop-Theater</h3><p>Wie Workshops zu Entscheidungen führen statt nur Prozessbilder zu produzieren.</p></article>
+</div><div style="margin-top:26px"><a class="btn btn-secondary" href="blog.html">Alle SAP Insights ansehen →</a></div></div></section>
+<section class="faq-section"><div class="container">
+<div class="section-head"><span class="kicker">FAQ</span><h2>Häufige Fragen vor einem ersten Gespräch</h2></div>
+<div class="faq-grid">
+<details><summary>Welche Rollen übernimmst du?</summary><p>Je nach Scope unterstütze ich als SAP Functional Consultant, Workstream Consultant, fachlicher Koordinator oder Project-Assurance-Rolle in Supply Chain und Manufacturing.</p></details>
+<details><summary>Arbeitest du vor Ort oder remote?</summary><p>Beides ist möglich. Workshops, Fit-to-Standard und kritische Projektphasen profitieren oft von Präsenz; fokussierte Delivery kann effizient remote erfolgen.</p></details>
+<details><summary>Welche Projektphasen deckst du ab?</summary><p>Von Prepare/Explore über Realize und Testing bis Deploy, Cutover und Hypercare – mit besonderem Fokus auf nachvollziehbare Übergaben zwischen den Phasen.</p></details>
+<details><summary>Kannst du bestehende Projekte stabilisieren?</summary><p>Ja. Typische Einstiege sind offene Defects, unklare Requirements, schwache Testabdeckung, instabile Stammdaten oder fehlende Governance in Signavio/Cloud ALM.</p></details>
+<details><summary>Welche Sprachen sind möglich?</summary><p>Deutsch und Englisch sind für Projektarbeit besonders relevant. Zusätzlich spreche ich Französisch, Spanisch, Italienisch, Russisch und Portugiesisch auf unterschiedlichen Niveaus.</p></details>
+<details><summary>Wie startet eine Zusammenarbeit?</summary><p>Mit einem kurzen Erstgespräch: Problem, Scope, Systemlandschaft, Projektphase und gewünschte Rolle klären. Danach lässt sich ein passender Einsatzrahmen definieren.</p></details>
+</div>
+</div></section>
+<section class="alt" id="blog">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">SAP Blog</span>
+      <h2>Praxiswissen aus Supply Chain, Manufacturing und Transformation</h2>
+      <p>Fachbeiträge zu SAP PP, MM, MRP, S/4HANA Cloud, Signavio, Cloud ALM, Testing und Projektmethodik.</p>
+    </div>
+    <div class="blog-preview-grid">
+      <article class="blog-preview-card">
+        <span class="blog-topic">SAP PP / MRP</span>
+        <h3>MRP in S/4HANA: Warum Stammdaten über die Planung entscheiden</h3>
+        <p>MRP-Typ, Losgröße, Beschaffungsart, Zeiten und Fertigungsversionen wirken zusammen – und genau hier entstehen viele Planungsprobleme.</p>
+        <a href="blog.html#mrp">Artikel lesen →</a>
+      </article>
+      <article class="blog-preview-card">
+        <span class="blog-topic">SAP MM</span>
+        <h3>Goods Movements: Was 101, 261 und Co. wirklich bedeuten</h3>
+        <p>Ein praxisnaher Überblick über Warenbewegungen, Materialbelege und ihre Bedeutung für Produktion und Bestand.</p>
+        <a href="blog.html#goods-movements">Artikel lesen →</a>
+      </article>
+      <article class="blog-preview-card">
+        <span class="blog-topic">Toolchain</span>
+        <h3>Signavio + Cloud ALM: Wie die Integrated Toolchain funktioniert</h3>
+        <p>Von Prozessdesign und Requirements bis Testing, Defects und Go-live – mit sauberer Traceability.</p>
+        <a href="blog.html#toolchain">Artikel lesen →</a>
+      </article>
+    </div>
+    <div style="margin-top:24px">
+      <a class="btn btn-secondary" href="blog.html">Alle Beiträge ansehen →</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="projekte-online">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Weitere Projekte</span>
+      <h2>Meine weiteren Webseiten & Projekte</h2>
+      <p>Direkter Zugang zu meinem SAP-Wissensbereich, unserer gemeinsamen SAP-Beratung DACHWERK und der Sprachlernplattform SprachWerk.</p>
+    </div>
+    <div class="grid3">
+      <article class="card">
+        <div class="icon">SAP</div>
+        <h3>SAP Blog</h3>
+        <p>Fachbeiträge zu SAP PP, MM, DDMRP, 3PL, Signavio, Cloud ALM, Testing, Cutover und SAP-Implementierungen.</p>
+        <a class="btn btn-secondary" href="blog.html">Zum SAP Blog →</a>
+      </article>
+      <article class="card">
+        <div class="icon">DW</div>
+        <h3>DACHWERK Consulting</h3>
+        <p>Gemeinsame SAP-Beratung mit Bilal für S/4HANA, PP, PP/DS, PEO, MM, Supply Chain und internationale Senior Delivery.</p>
+        <a class="btn btn-secondary" href="dachwerk/index.html">DACHWERK öffnen →</a>
+      </article>
+      <article class="card">
+        <div class="icon">SW</div>
+        <h3>SprachWerk</h3>
+        <p>Professionelle Sprachlernplattform mit Kursfinder, Einstufung, Privatunterricht und Firmenkursen.</p>
+        <a class="btn btn-secondary" href="sprachschule/index.html">SprachWerk öffnen →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cv-download" id="cv"><div class="container"><div class="cv-download-card"><div><span class="kicker">Curriculum Vitae</span><h2>Fabio Witt - SAP Consulting CV</h2><p>Professioneller CV mit SAP S/4HANA Supply Chain Erfahrung, Projektübersicht, Zertifizierungen, Ausbildung und Sprachkenntnissen.</p></div><div class="cv-download-actions"><a class="btn btn-primary" href="downloads/Fabio-Witt-CV.pdf" target="_blank" rel="noopener">CV als PDF öffnen</a><a class="btn btn-secondary" href="downloads/Fabio-Witt-CV.pdf" download>PDF herunterladen</a></div></div></div></section>
+<section id="kontakt"><div class="container"><div class="contact-layout"><div><span class="kicker">Unverbindliches Erstgespräch</span><h2>Ihr SAP-Thema in 30 Minuten strukturieren.</h2><p>Beschreiben Sie kurz Ausgangslage, Modul/Workstream und Projektphase. Ich melde mich persönlich.</p><div class="contact-points"><span>✓ Direkter Kontakt</span><span>✓ Kein Newsletter</span><span>✓ Keine Weitergabe an Dritte durch diese statische Demo</span></div><a class="btn btn-secondary" href="https://www.linkedin.com/in/fabio-witt-8b889117a/" rel="noopener" target="_blank">Alternativ über LinkedIn ↗</a></div>
+<form action="danke.html" class="contact-form" method="POST" name="projektanfrage" netlify-honeypot="bot-field"><input name="form-name" type="hidden" value="projektanfrage"/><p hidden=""><label>Nicht ausfüllen: <input name="bot-field"/></label></p><label>Name<input autocomplete="name" name="name" required=""/></label><label>Geschäftliche E-Mail<input autocomplete="email" name="email" required="" type="email"/></label><label>Unternehmen<input autocomplete="organization" name="unternehmen"/></label><label>Schwerpunkt<select name="schwerpunkt"><option>SAP PP / Manufacturing</option><option>SAP MM / Procurement</option><option>S/4HANA Public Cloud</option><option>SAP Signavio / Cloud ALM</option><option>Testing / Cutover</option><option>Sonstiges</option></select></label><label class="full">Kurzbeschreibung<textarea name="nachricht" placeholder="Worum geht es? Welche Projektphase? Welcher Scope?" rows="5"></textarea></label><label class="consent full"><input name="privacy" required="" type="checkbox" value="accepted"/><span>Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> gelesen.</span></label><button class="btn btn-primary full" type="submit">Projektanfrage senden</button></form></div></div></section>
+</main>
+<div class="sticky-cta"><span><strong>SAP-Projekt im Kopf?</strong> Kurz Scope und Bedarf klären.</span><a href="#kontakt">Kundenanfrage</a></div>
+<section id="fabio-anfrage" style="max-width:1180px;margin:36px auto;padding:28px;border:1px solid #dce6ec;border-radius:20px;background:#fff">
+  <span style="font-size:10px;font-weight:900;letter-spacing:.1em;color:#2a9d8f">FABIO WITT · PROJEKTANFRAGE</span>
+  <h2 style="color:#14375f">SAP-Unterstützung anfragen</h2>
+  <p style="color:#647a8e">Beschreiben Sie kurz Projekt, SAP-Bereich und gewünschten Zeitraum.</p>
+  <form action="https://formsubmit.co/fabiowitt@gmx.de" method="POST">
+    <input type="hidden" name="_subject" value="Neue Fabio Witt SAP-Projektanfrage">
+    <input type="hidden" name="_captcha" value="false">
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px">
+      <label>Name<input name="name" required style="width:100%;padding:11px;border:1px solid #bdced8;border-radius:9px"></label>
+      <label>E-Mail<input name="email" type="email" required style="width:100%;padding:11px;border:1px solid #bdced8;border-radius:9px"></label>
+      <label>Unternehmen<input name="unternehmen" style="width:100%;padding:11px;border:1px solid #bdced8;border-radius:9px"></label>
+      <label>SAP-Bereich<input name="sap-bereich" placeholder="PP, MM, Public Cloud, Signavio, Cloud ALM …" style="width:100%;padding:11px;border:1px solid #bdced8;border-radius:9px"></label>
+    </div>
+    <label style="display:grid;margin-top:12px">Projektbeschreibung<textarea name="projekt" rows="5" required style="padding:11px;border:1px solid #bdced8;border-radius:9px"></textarea></label>
+    <button type="submit" style="margin-top:12px;padding:12px 16px;border:0;border-radius:9px;background:#14375f;color:#fff;font-weight:900">Projektanfrage senden</button>
+  </form>
+</section><section class="page-final-cta">
+  <div class="page-final-cta__inner">
+    <div><span>FABIO WITT · SAP CONSULTING</span><h2>SAP-Unterstützung anfragen</h2><p>Projektunterstützung für SAP S/4HANA Supply Chain, PP, MM, Public Cloud, Signavio und Cloud ALM.</p></div>
+    <a href="#fabio-anfrage">Projektanfrage</a>
+  </div>
+</section>
+
+<section class="webseiten-showcase">
+ <div class="webseiten-showcase-inner">
+  <span>WEB-ÖKOSYSTEM</span><h2>Vier Angebote. Eine klare digitale Markenwelt.</h2>
+  <p>DACHWERK für SAP-Beratung, SPRACHWERK für persönlichen Sprachunterricht, LERNWERK für digitales Lernen und Fabio Witt als persönliche Beratungsmarke.</p>
+  <img src="shared-assets/webseiten-visuals.png" alt="Visuelle Übersicht von DACHWERK, SPRACHWERK, LERNWERK und Fabio Witt">
+ </div>
+</section><footer><div class="container"><div class="footergrid">
+<div><img alt="" src="assets/logo.svg" style="width:220px;filter:brightness(0) invert(1);opacity:.9"/><p>Persönliche SAP S/4HANA Beratung für Supply Chain, Manufacturing und Transformation.</p></div>
+<div><strong>Schwerpunkte</strong><a href="#leistungen">SAP PP &amp; Manufacturing</a><a href="#leistungen">SAP MM &amp; Procurement</a><a href="#leistungen">Public Cloud</a><a href="#leistungen">Signavio &amp; Cloud ALM</a></div>
+<div><strong>Kontakt</strong><a href="#kontakt">Kundenanfrage</a><a href="https://www.linkedin.com/in/fabio-witt-8b889117a/" rel="noopener" target="_blank">LinkedIn ↗</a><a href="blog.html">SAP Insights</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+</div><div class="fine">© 2026 Fabio Witt · Unabhängige SAP-Beratung. SAP und weitere SAP-Produkte sind Marken der SAP SE oder ihrer verbundenen Unternehmen. Keine gesellschaftsrechtliche Verbindung zu SAP SE.</div></div></footer>
+
+<script data-nav-script="v29">
+document.addEventListener("DOMContentLoaded",()=>{
+  const btn=document.querySelector(".nav-toggle"), nav=document.querySelector(".main-nav");
+  if(!btn||!nav)return;
+  btn.addEventListener("click",()=>{
+    const open=nav.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded",String(open));
+  });
+  nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{
+    nav.classList.remove("is-open");btn.setAttribute("aria-expanded","false");
+  }));
+  window.addEventListener("resize",()=>{
+    if(window.innerWidth>980){nav.classList.remove("is-open");btn.setAttribute("aria-expanded","false")}
+  });
+});
+</script><script src="shared-assets/site-config.js"></script>
+<script data-paypal-script="v32">
+document.addEventListener("DOMContentLoaded",()=>{
+  document.querySelectorAll("[data-paypal-donate]").forEach(a=>{
+    const url=window.FW_SITE_CONFIG?.paypalDonationUrl||"";
+    if(url && !url.includes("DEIN_PAYPAL_BUTTON_ID")) a.href=url;
+    else {
+      a.addEventListener("click",e=>{
+        e.preventDefault();
+        alert("PayPal-Spendenlink ist noch nicht konfiguriert. Bitte die echte PayPal-Donate-ID in shared-assets/site-config.js eintragen.");
+      });
+    }
+  });
+});
+</script>
+
+<script src="shared-assets/mobile-nav-v44.js" defer></script>
+</body></html>

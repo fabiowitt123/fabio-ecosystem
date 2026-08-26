@@ -1,0 +1,11 @@
+Fabio Witt Web Ecosystem v44 - Mobile UX / Navbar Repair
+
+Changes:
+- Added one shared mobile-navigation controller for the complete ecosystem.
+- Fixes the double-toggle bug caused by multiple legacy click handlers on the same hamburger button.
+- Supports all existing navigation variants: nav-toggle/main-nav, v38, v41, primary-nav and legacy blog menu.
+- Adds accessible aria-expanded state, Escape-to-close, close-on-link, close-on-resize and backdrop behavior.
+- Prevents background scrolling while the mobile menu is open.
+- Strengthens mobile menu stacking/z-index and touch targets.
+- Adds responsive hardening for forms, dialogs, tables, media, long headings and CTA buttons.
+- Keeps desktop navigation unchanged.
