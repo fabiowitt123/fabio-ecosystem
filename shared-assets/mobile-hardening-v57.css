@@ -1,0 +1,55 @@
+/* Fabio Ecosystem v57 - sitewide mobile hardening */
+html{max-width:100%;overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{max-width:100%;overflow-x:hidden}
+img,svg,video,canvas,iframe{max-width:100%;height:auto}
+*{overflow-wrap:break-word}
+pre,code{overflow-x:auto;max-width:100%}
+input,select,textarea,button{max-width:100%}
+textarea{resize:vertical}
+[hidden]{display:none!important}
+
+@media (max-width: 900px){
+  .container,.wrap,.shell,.app-shell{max-width:100%}
+  table{min-width:600px}
+  .compare-table-wrap,.table-wrap,[class*="table-wrap"]{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
+
+@media (max-width: 640px){
+  body{width:100%;min-width:0}
+  h1{font-size:clamp(2rem,10vw,3rem);line-height:1.05}
+  h2{font-size:clamp(1.65rem,7.5vw,2.35rem);line-height:1.1}
+  h3{line-height:1.2}
+  p,li{line-height:1.55}
+
+  /* Prevent iOS input zoom and make forms easy to tap */
+  input,select,textarea{font-size:16px!important;min-height:48px}
+  textarea{min-height:120px}
+  button,.btn,.button,[role="button"],a.btn,a.button{min-height:46px;display:inline-flex;align-items:center;justify-content:center}
+  input[type="checkbox"],input[type="radio"]{min-height:0;width:20px;height:20px;flex:0 0 20px}
+  label{max-width:100%}
+
+  /* Common responsive grids */
+  .form-grid,.contact-layout,.hero-grid,.split,.cta,.grid2,.grid3,.grid4,
+  [class*="-grid"]{grid-template-columns:1fr!important}
+  .form-row{grid-template-columns:1fr!important}
+
+  /* Cards and sections should not touch screen edges */
+  .card,[class*="-card"],section article{max-width:100%}
+  section{scroll-margin-top:82px}
+
+  /* Horizontal data stays usable instead of shrinking unreadably */
+  .compare-table-wrap,.table-wrap,[class*="table-wrap"]{overflow-x:auto!important;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+  table{font-size:14px;white-space:nowrap}
+
+  /* Modal/dialog safety */
+  dialog{width:calc(100% - 20px)!important;max-height:90dvh!important;margin:auto!important}
+
+  /* Sticky/fixed bars respect iPhone safe areas */
+  [class*="mobile-cta"],[class*="sticky"]{padding-bottom:max(10px,env(safe-area-inset-bottom))}
+}
+
+@media (max-width: 420px){
+  .container,.wrap{width:calc(100% - 22px)!important}
+  .btn,.button{width:100%}
+  .sw56-mobile-cta .btn,.sw56-mobile-cta a{width:auto}
+}
