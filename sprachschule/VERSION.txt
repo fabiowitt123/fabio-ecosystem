@@ -1,3 +1,1 @@
-SprachWerk Sprachschule - v2
-
-Best-Practice-Ausbau: Kursfinder, Mini-Einstufung, Netlify-Formular, Mobile Navigation, Accessibility, SEO/Schema, robots/sitemap, bessere Conversion und Firmenkundenstruktur.
+v52 - Monetarisierung

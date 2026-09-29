@@ -136,7 +136,11 @@ html{scroll-padding-top:86px}
 @media(max-width:1080px){.fw50-nav__inner{min-height:68px;width:calc(100% - 24px)}.fw50-menu{display:none}.fw50-mobile{display:block}.fw50-brand{min-width:0}.fw50-brand__name small{display:none}}
 @media(max-width:520px){html{scroll-padding-top:72px}.fw50-nav__inner{min-height:64px;width:calc(100% - 20px);gap:12px}.fw50-brand__mark{width:36px;height:36px;border-radius:11px}.fw50-brand__name b{font-size:15px}.fw50-mobile>summary{width:46px;height:46px}.fw50-mobile__panel{position:fixed;left:10px;right:10px;top:72px;width:auto;max-height:calc(100dvh - 84px);overflow:auto}.fw50-nav{padding-top:env(safe-area-inset-top,0px)}}
 @media(prefers-reduced-motion:reduce){.fw50-nav *{transition:none!important}}
-</style><link href="../shared-assets/v51-polish.css" rel="stylesheet"/></head>
+</style><link href="../shared-assets/v51-polish.css" rel="stylesheet"/>
+<link href="monetization-v52.css" rel="stylesheet"/>
+<script defer src="commerce-v52.js"></script>
+<link rel="stylesheet" href="../shared-assets/i18n-v55.css" data-fw-i18n="v55"/>
+</head>
 <body><header class="fw50-nav" data-fw50-nav=""><div class="fw50-nav__inner">
 <a aria-label="Fabio Witt Startseite" class="fw50-brand" href="../"><span aria-hidden="true" class="fw50-brand__mark">FW</span><span class="fw50-brand__name"><b>Fabio Witt</b><small>Digital Ecosystem</small></span></a>
 <nav aria-label="Hauptnavigation" class="fw50-menu"><a href="../dachwerk/">DACHWERK</a><a aria-current="page" href="../sprachschule/">SPRACHWERK</a><a href="../sprachlernapp/">LERNWERK</a><a href="../">Fabio Witt</a><a href="../downloads/Fabio-Witt-CV.pdf">CV</a><a href="../dachwerk/blog">Blog</a><a class="fw50-cta" href="../sprachschule/#kursanfrage">Kursanfrage</a></nav>
@@ -152,7 +156,7 @@ html{scroll-padding-top:86px}
 <p>Persönlicher Sprachunterricht mit Fabio Witt – einem mehrsprachigen Sprachlehrer mit eigener Lernerfahrung in sieben Sprachen. Für Alltag, Beruf und Unternehmen.</p>
 <div class="hero-actions">
 <a class="btn btn-primary" href="#kursfinder">Passenden Kurs finden</a>
-<a class="btn btn-secondary" href="#kursanfrage">Kostenlose Beratung</a>
+<a class="btn btn-secondary" href="#preise">Preise ansehen</a>
 </div>
 <div class="hero-proof">
 <span>✓ A1–C2</span>
@@ -538,133 +542,97 @@ html{scroll-padding-top:86px}
 </div>
 </div>
 </section>
-<section class="alt sprachwerk-pricing" id="preise">
+<section class="alt sw52-pricing" id="preise">
 <div class="container">
 <div class="section-head pricing-head">
-<span class="kicker">Sprachunterricht &amp; Coaching</span>
-<h2>Das passende Sprachwerk-Paket für Ihr Ziel.</h2>
-<p>Vom flexiblen Einstieg bis zur intensiven persönlichen Begleitung. Alle Pakete sind als Angebotsstruktur vorbereitet; konkrete Preise und Unterrichtsumfang können vor dem Livegang final festgelegt werden.</p>
+<span class="kicker">SPRACHWERK · Preise</span>
+<h2>Klare Pakete. Klare Leistung. Kein Abo-Zwang.</h2>
+<p>Wähle die Intensität, die zu deinem Ziel passt. Alle Preise verstehen sich als Endpreise für Privatkundinnen und Privatkunden; vor Buchung werden Termin, Sprache und Verfügbarkeit bestätigt.</p>
 </div>
-<div class="school-pricing-grid">
-<article class="school-price-card">
-<div class="school-price-top">
-<span class="plan-label">Flexibler Einzelunterricht</span>
-<h3>Economy</h3>
-<p>Für Lernende, die gezielt einzelne Themen oder Gesprächssituationen mit persönlichem Unterricht verbessern möchten.</p>
-</div>
-<div class="school-price-value"><strong>ab 39 €</strong><span>/ Einheit*</span></div>
-<ul>
-<li>Einzelne Unterrichtseinheiten</li>
-<li>1 Zielsprache</li>
-<li>individuelle Themenwahl</li>
-<li>digitale Lernmaterialien</li>
-<li>Zugang zur Sprachlernapp Free</li>
-<li>flexible Terminvereinbarung</li>
-</ul>
-<a class="btn btn-secondary price-cta" href="#kontakt">Economy anfragen</a>
+<div class="sw52-billing-note"><strong>✓ Online-Unterricht inklusive</strong><span>Präsenztermine nach Vereinbarung · Zahlung erst nach Terminbestätigung · sichere Zahlungslinks werden separat versendet</span></div>
+<div class="school-pricing-grid sw52-grid">
+<article class="school-price-card sw52-card" data-plan="Economy" data-price="49">
+<div class="school-price-top"><span class="plan-label">Flexibel testen</span><h3>Economy</h3><p>Für einzelne Themen, Konversation oder einen gezielten Lernimpuls ohne Laufzeit.</p></div>
+<div class="school-price-value"><strong>49 €</strong><span>/ 60 Min.</span></div>
+<ul><li>1 × 60 Min. 1:1-Unterricht</li><li>1 Zielsprache</li><li>individuelle Themenwahl</li><li>digitale Lernmaterialien</li><li>LERNWERK Free</li><li>keine Mindestlaufzeit</li></ul>
+<a class="btn btn-secondary price-cta sw52-buy" href="#kursanfrage" data-plan="Economy">Economy buchen</a>
 </article>
-<article class="school-price-card">
-<div class="school-price-top">
-<span class="plan-label">Strukturiert lernen</span>
-<h3>Standard</h3>
-<p>Für kontinuierlichen Fortschritt mit strukturiertem Lernplan und regelmäßiger persönlicher Betreuung.</p>
-</div>
-<div class="school-price-value"><strong>ab 129 €</strong><span>/ Monat*</span></div>
-<ul>
-<li>regelmäßiger 1:1-Unterricht</li>
-<li>persönlicher Lernplan</li>
-<li>Hausaufgaben &amp; Wiederholungen</li>
-<li>monatlicher Fortschrittscheck</li>
-<li>Sprachlernapp Pro während der Laufzeit</li>
-<li>Grammatik, Wortschatz &amp; Konversation</li>
-</ul>
-<a class="btn btn-secondary price-cta" href="#kontakt">Standard anfragen</a>
+<article class="school-price-card sw52-card" data-plan="Standard" data-price="179">
+<div class="school-price-top"><span class="plan-label">Kontinuierlich lernen</span><h3>Standard</h3><p>Ein strukturierter Monatsrhythmus mit persönlichem Lernplan und regelmäßiger Sprechpraxis.</p></div>
+<div class="school-price-value"><strong>179 €</strong><span>/ Monat</span></div>
+<ul><li>4 × 45 Min. 1:1-Unterricht</li><li>persönlicher Lernplan</li><li>Übungen zwischen den Terminen</li><li>monatlicher Fortschrittscheck</li><li>LERNWERK Pro während der Laufzeit</li><li>monatlich kündbar</li></ul>
+<div class="sw52-saving">≈ 44,75 € pro Termin</div>
+<a class="btn btn-secondary price-cta sw52-buy" href="#kursanfrage" data-plan="Standard">Standard buchen</a>
 </article>
-<article class="school-price-card featured">
-<span class="school-popular">EMPFOHLEN</span>
-<div class="school-price-top">
-<span class="plan-label">Intensiv &amp; persönlich</span>
-<h3>Premium</h3>
-<p>Für ambitionierte Lernziele, Business-Kommunikation oder eine schnelle, strukturierte Verbesserung.</p>
-</div>
-<div class="school-price-value"><strong>ab 249 €</strong><span>/ Monat*</span></div>
-<ul>
-<li>intensiver 1:1-Unterricht</li>
-<li>individueller A1–C1-Lernpfad</li>
-<li>Sprachlernapp Pro inklusive</li>
-<li>persönliche Fehleranalyse</li>
-<li>Business- &amp; Alltagssimulationen</li>
-<li>priorisierte Terminplanung</li>
-<li>regelmäßige Fortschrittsberichte</li>
-</ul>
-<a class="btn btn-primary price-cta" href="#kontakt">Premium anfragen</a>
+<article class="school-price-card featured sw52-card" data-plan="Premium" data-price="329">
+<span class="school-popular">BELIEBTEST</span>
+<div class="school-price-top"><span class="plan-label">Schneller Fortschritt</span><h3>Premium</h3><p>Für ambitionierte Lernziele, Business-Kommunikation und deutlich mehr aktive Sprachzeit.</p></div>
+<div class="school-price-value"><strong>329 €</strong><span>/ Monat</span></div>
+<ul><li>4 × 60 Min. 1:1-Unterricht</li><li>individueller A1–C1-Lernpfad</li><li>LERNWERK Pro inklusive</li><li>persönliche Fehleranalyse</li><li>1 schriftliches Feedback / Monat</li><li>Business- &amp; Alltagssimulationen</li><li>priorisierte Terminplanung</li></ul>
+<div class="sw52-saving">inkl. persönlicher Lernanalyse</div>
+<a class="btn btn-primary price-cta sw52-buy" href="#kursanfrage" data-plan="Premium">Premium buchen</a>
 </article>
-<article class="school-price-card pro">
-<div class="school-price-top">
-<span class="plan-label">Maximale Begleitung</span>
-<h3>Pro</h3>
-<p>Für Prüfungsvorbereitung, berufliche Ziele und Lernende, die eine besonders intensive Betreuung wünschen.</p>
-</div>
-<div class="school-price-value"><strong>ab 399 €</strong><span>/ Monat*</span></div>
-<ul>
-<li>maßgeschneidertes Coaching</li>
-<li>hohe Unterrichtsfrequenz</li>
-<li>Sprachlernapp Pro inklusive</li>
-<li>individuelle Hausaufgaben</li>
-<li>Prüfungs- oder Business-Vorbereitung</li>
-<li>Schreib- &amp; Präsentationsfeedback</li>
-<li>persönliche Lernstrategie</li>
-<li>direkte Fortschrittsbegleitung</li>
-</ul>
-<a class="btn btn-secondary price-cta" href="#kontakt">Pro-Beratung anfragen</a>
+<article class="school-price-card pro sw52-card" data-plan="Pro" data-price="599">
+<div class="school-price-top"><span class="plan-label">Intensivprogramm</span><h3>Pro</h3><p>Für Prüfungen, Jobwechsel, Präsentationen oder ein zeitkritisches Sprachziel.</p></div>
+<div class="school-price-value"><strong>599 €</strong><span>/ Monat</span></div>
+<ul><li>8 × 60 Min. 1:1-Unterricht</li><li>maßgeschneiderter Lernplan</li><li>LERNWERK Pro inklusive</li><li>individuelle Hausaufgaben</li><li>Schreib- &amp; Präsentationsfeedback</li><li>Prüfungs-/Business-Vorbereitung</li><li>wöchentliche Fortschrittsbegleitung</li><li>priorisierte Terminplanung</li></ul>
+<div class="sw52-saving">für intensive 4‑Wochen-Ziele</div>
+<a class="btn btn-secondary price-cta sw52-buy" href="#kursanfrage" data-plan="Pro">Pro buchen</a>
 </article>
 </div>
-<div class="school-pricing-note">
-<strong>* Preisstruktur als Vorschlag.</strong>
-<span>Die endgültigen Preise, Einheitsdauer, Paketlaufzeiten, Stornierungsbedingungen und steuerlichen Angaben sollten vor dem kommerziellen Livegang verbindlich festgelegt werden.</span>
+
+<div class="sw52-addons" id="extras">
+<div class="section-head"><span class="kicker">Extras</span><h2>Kleine Produkte für einen einfachen Einstieg.</h2><p>Ideal, wenn du Sprachwerk zuerst kennenlernen oder nur punktuell Unterstützung brauchst.</p></div>
+<div class="sw52-addon-grid">
+<article><span>🧭</span><h3>Einstufung + Lernplan</h3><strong>29 €</strong><p>30 Minuten Standortbestimmung inklusive persönlicher Empfehlung für die nächsten 8 Wochen.</p><a href="#kursanfrage" class="sw52-buy" data-plan="Einstufung + Lernplan">Buchen</a></article>
+<article><span>✍️</span><h3>Writing Review</h3><strong>39 €</strong><p>Korrektur und kommentiertes Feedback zu einem Text bis 800 Wörter.</p><a href="#kursanfrage" class="sw52-buy" data-plan="Writing Review">Buchen</a></article>
+<article><span>🗣️</span><h3>Conversation Booster</h3><strong>89 €</strong><p>2 × 45 Minuten reine Sprechpraxis zu Alltag, Reise oder Business.</p><a href="#kursanfrage" class="sw52-buy" data-plan="Conversation Booster">Buchen</a></article>
+<article><span>🎁</span><h3>Geschenkgutschein</h3><strong>ab 49 €</strong><p>Verschenke Sprachunterricht. Gutscheinwert und Sprache können frei gewählt werden.</p><a href="#kursanfrage" class="sw52-buy" data-plan="Geschenkgutschein">Gutschein anfragen</a></article>
 </div>
+</div>
+
+<div class="sw52-business" id="firmenpreise">
+<div><span class="kicker">Für Unternehmen</span><h2>Business-Sprachtraining als klar kalkulierbares Paket.</h2><p>Für internationale Teams, Meetings, Präsentationen und rollenbezogene Kommunikation. Inklusive Bedarfsanalyse, Einstufung und Fortschrittsreport.</p></div>
+<div class="sw52-business-price"><small>ab</small><strong>1.290 €</strong><span>10 × 60 Min. Teamtraining</span><a class="btn btn-primary sw52-buy" href="#kursanfrage" data-plan="Firmenpaket 10x60">Firmenangebot anfragen</a></div>
+</div>
+
 <div class="school-pricing-compare">
-<h3>Pakete auf einen Blick</h3>
-<div class="compare-table-wrap">
-<table>
+<h3>Pakete auf einen Blick</h3><div class="compare-table-wrap"><table>
 <thead><tr><th>Leistung</th><th>Economy</th><th>Standard</th><th>Premium</th><th>Pro</th></tr></thead>
 <tbody>
-<tr><td>Persönlicher Unterricht</td><td>flexibel</td><td>regelmäßig</td><td>intensiv</td><td>maßgeschneidert</td></tr>
+<tr><td>1:1-Unterricht / Monat</td><td>1 × 60</td><td>4 × 45</td><td>4 × 60</td><td>8 × 60</td></tr>
 <tr><td>Persönlicher Lernplan</td><td>–</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Sprachlernapp Pro</td><td>–</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Fortschrittsanalyse</td><td>–</td><td>monatlich</td><td>regelmäßig</td><td>individuell</td></tr>
+<tr><td>LERNWERK Pro</td><td>Free</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Schriftliches Feedback</td><td>–</td><td>–</td><td>1× / Monat</td><td>laufend</td></tr>
 <tr><td>Business / Prüfung</td><td>optional</td><td>optional</td><td>✓</td><td>✓</td></tr>
-<tr><td>Priorisierte Betreuung</td><td>–</td><td>–</td><td>✓</td><td>✓</td></tr>
-</tbody>
-</table>
+<tr><td>Priorisierte Termine</td><td>–</td><td>–</td><td>✓</td><td>✓</td></tr>
+</tbody></table></div>
 </div>
-</div>
-<div class="pricing-faq">
-<details><summary>Welches Paket passt zu mir?</summary><p>Economy eignet sich für einzelne Themen und flexible Termine. Standard ist für kontinuierliches Lernen gedacht. Premium richtet sich an ambitionierte Lernende mit höherer Intensität. Pro wird individuell für Prüfungen, Business-Ziele oder besonders intensive Betreuung zusammengestellt.</p></details>
-<details><summary>Welche Sprachen kann ich buchen?</summary><p>Der Unterricht ist für die auf Sprachwerk angebotenen Sprachen vorgesehen. Die konkrete Verfügbarkeit und das passende Niveau werden bei der Anfrage abgestimmt.</p></details>
-<details><summary>Kann ich zwischen Paketen wechseln?</summary><p>Die Angebotsstruktur ist so angelegt, dass ein Wechsel grundsätzlich möglich ist. Die endgültigen Wechsel-, Laufzeit- und Kündigungsbedingungen werden vor dem Livegang verbindlich festgelegt.</p></details>
-</div>
+<div class="sw52-terms"><strong>Fair & transparent:</strong><span>Keine automatische Abbuchung über diese Website. Nach deiner Buchungsanfrage erhältst du eine Terminbestätigung und einen separaten Zahlungslink bzw. eine Rechnung. Monatsmodelle sind für den jeweils gebuchten Monat gültig. Umbuchungs- und Stornierungsbedingungen werden vor Zahlung bestätigt.</span></div>
 </div>
 </section>
-<section class="alt" id="kursanfrage">
+<section class="alt sw52-order" id="kursanfrage">
 <div class="container">
 <div class="section-head">
 <span class="kicker">SPRACHWERK · Kursanfrage</span>
-<h2>Welches Sprachziel möchten Sie erreichen?</h2>
-<p>Teilen Sie Sprache, Niveau, Ziel und gewünschte Intensität mit. Danach kann ein passendes Paket empfohlen werden.</p>
+<h2>Kurs buchen oder unverbindlich reservieren.</h2>
+<p>Wähle dein Paket und deine Wunschzeiten. Wir bestätigen die Verfügbarkeit persönlich; erst danach erhältst du Zahlungslink oder Rechnung.</p>
 </div>
 <form action="https://formsubmit.co/fabiowitt@gmx.ch" class="contact-form" method="POST" name="kursanfrage">
-<input name="form-name" type="hidden" value="kursanfrage"/><input name="_subject" type="hidden" value="Neue SPRACHWERK Kursanfrage"/><input name="_captcha" type="hidden" value="false"/>
+<input name="form-name" type="hidden" value="kursanfrage"/><input name="_subject" type="hidden" value="Neue SPRACHWERK Buchungsanfrage"/><input name="_captcha" type="hidden" value="false"/><input name="_template" type="hidden" value="table"/><input name="_next" type="hidden" value="https://fabio-ecosystem.fabio-witt-0b6.workers.dev/sprachschule/danke.html"/>
 <div class="form-grid">
 <label>Name<input name="name" required=""/></label>
 <label>E-Mail<input name="email" required="" type="email"/></label>
 <label>Sprache<select name="sprache"><option>Deutsch</option><option>Englisch</option><option>Französisch</option><option>Spanisch</option><option>Italienisch</option><option>Russisch</option><option>Portugiesisch</option></select></label>
 <label>Aktuelles Niveau<select name="niveau"><option>Anfänger / A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>Unsicher</option></select></label>
-<label>Interesse<select name="paket"><option>Economy</option><option>Standard</option><option>Premium</option><option>Pro</option><option>Noch offen</option></select></label>
+<label>Paket<select id="sw52-package" name="paket"><option>Economy – 49 € / 60 Min.</option><option>Standard – 179 € / Monat</option><option>Premium – 329 € / Monat</option><option>Pro – 599 € / Monat</option><option>Einstufung + Lernplan – 29 €</option><option>Writing Review – 39 €</option><option>Conversation Booster – 89 €</option><option>Geschenkgutschein – ab 49 €</option><option>Firmenpaket 10×60 – ab 1.290 €</option><option>Noch offen</option></select></label>
 <label>Ziel<select name="ziel"><option>Alltag / Reisen</option><option>Beruf / Business</option><option>Prüfung</option><option>Auswandern</option><option>Persönliche Entwicklung</option></select></label>
+<label>Bevorzugtes Format<select name="format"><option>Online</option><option>Präsenz nach Vereinbarung</option><option>Hybrid</option></select></label>
+<label>Wunschtermin / Verfügbarkeit<input name="wunschzeit" placeholder="z. B. Dienstag ab 18 Uhr"/></label>
 </div>
-<label>Nachricht<textarea name="nachricht" placeholder="Was möchten Sie erreichen? Wie oft möchten Sie lernen?" rows="5"></textarea></label>
-<button class="btn btn-primary" type="submit">Kursanfrage senden</button>
+<label>Nachricht<textarea name="nachricht" placeholder="Was möchtest du erreichen? Gibt es einen Zieltermin oder besondere Themen?" rows="5"></textarea></label>
+<label class="consent"><input required type="checkbox" name="agb_datenschutz" value="akzeptiert"/><span>Ich stimme der Verarbeitung meiner Angaben zur Buchungsabwicklung zu und bestätige, dass die Buchung erst nach Terminbestätigung und Zahlungsinformation verbindlich wird.</span></label>
+<div class="sw52-order-actions"><button class="btn btn-primary" type="submit">Buchungsanfrage senden</button><a class="btn btn-secondary" href="#preise">Preise vergleichen</a></div>
 </form>
 </div>
 </section><section id="kontakt">
@@ -825,5 +793,6 @@ document.addEventListener("DOMContentLoaded",()=>{
   });
 });
 </script>
+<script src="../shared-assets/i18n-v55.js" data-fw-i18n="v55"></script>
 </body>
 </html>

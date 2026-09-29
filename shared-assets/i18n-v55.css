@@ -1,0 +1,29 @@
+/* Fabio Ecosystem v55 - DE / EN / RU language switcher */
+.fw-lang-switcher{
+  display:inline-flex;align-items:center;gap:5px;margin-left:8px;padding:4px 5px;
+  border:1px solid rgba(20,55,95,.13);border-radius:999px;background:rgba(255,255,255,.94);
+  box-shadow:0 4px 14px rgba(20,55,95,.06);vertical-align:middle;flex:0 0 auto;
+}
+.fw-lang-btn{
+  width:30px;height:25px;padding:3px;border:0;border-radius:7px;background:transparent;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;transition:background .18s,transform .18s,box-shadow .18s;
+}
+.fw-lang-btn:hover{background:#eef4f7;transform:translateY(-1px)}
+.fw-lang-btn.is-active{background:#fff;box-shadow:0 0 0 2px #149a72,0 2px 8px rgba(20,154,114,.16)}
+.fw-lang-btn img{display:block;width:22px;height:15px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(13,35,66,.15)}
+.fw-lang-btn:focus-visible{outline:3px solid rgba(20,154,114,.28);outline-offset:2px}
+.fw-lang-label{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.fw50-menu .fw-lang-switcher{margin-left:2px}
+.fw50-mobile__panel .fw-lang-switcher,.main-nav .fw-lang-switcher{margin:6px 0 2px}
+.goog-te-banner-frame.skiptranslate,.goog-te-banner-frame{display:none!important}
+body{top:0!important}
+#google_translate_element,.goog-logo-link,.goog-te-gadget span{display:none!important}
+.goog-te-gadget{height:0!important;overflow:hidden!important}
+@media(max-width:980px){
+  .fw50-menu>.fw-lang-switcher{display:none}
+  .fw50-mobile__panel .fw-lang-switcher{display:inline-flex;width:max-content}
+  .main-nav .fw-lang-switcher{align-self:flex-start}
+}
+@media(min-width:981px){
+  .fw50-mobile__panel .fw-lang-switcher{display:none}
+}
